@@ -53,7 +53,7 @@
                     <a href="#download" title="点击下载影视APP"
                         class="text-center bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
                         <img class="w-1/3 mx-auto float-left" src="./img/download.png" alt="Card Image"
-                            style="width:30px;height:25px;">Download</a>
+                            style="width:30px;height:25px;">下载安装包</a>
                 </div>
             </div>
             <!-- 右边展示图 -->
@@ -250,18 +250,34 @@
     // 方法二：查看github的Releases发版记录
     axios.get('https://api.github.com/repos/fongmi/TV/releases/latest').then(res => {
         let liItemLeanback = '';
+        let liItemLeanbackRecommend = ''; //📺电视版apk推荐
         let liItemMobile = '';
+        let liItemMobileRecommend = ''; //📱手机版apk推荐
         let downloads = res.data.assets;
         let downloadList = document.querySelector('#download ul');
         downloads.forEach(item => {
             if (item.name.endsWith(".apk")) {
                 if (item.name.includes("leanback")) {
-                    liItemLeanback += getTemplate(item.name, item.browser_download_url, item.size, item.updated_at);
+                    if (isRecommend(item.name)) {
+                        liItemLeanbackRecommend = getTemplate(item.name, item.browser_download_url, item.size, item.updated_at);
+                    } else {
+                        liItemLeanback += getTemplate(item.name, item.browser_download_url, item.size, item.updated_at);
+                    }
                 } else {
-                    liItemMobile += getTemplate(item.name, item.browser_download_url, item.size, item.updated_at);
+                    if (isRecommend(item.name)) {
+                        liItemMobileRecommend = getTemplate(item.name, item.browser_download_url, item.size, item.updated_at);
+                    } else {
+                        liItemMobile += getTemplate(item.name, item.browser_download_url, item.size, item.updated_at);
+                    }
                 }
             }
         })
+        if (liItemLeanbackRecommend) {
+            liItemLeanback = liItemLeanbackRecommend + liItemLeanback;
+        }
+        if (liItemMobileRecommend) {
+            liItemMobile = liItemMobileRecommend + liItemMobile;
+        }
         downloadList.innerHTML = `
             <h2 class="ml-2 text-3x3 font-bold my-0"><li><h2>📺电视版</h2></li><hr></h2>
             ${liItemLeanback}
