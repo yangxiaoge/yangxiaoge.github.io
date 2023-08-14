@@ -151,10 +151,10 @@
                 <p class="text-center mt-2">小雅</p>
             </div>
             <!-- 卡片 10 -->
-            <div data-config="http://itvbox.cc/tvbox/云星日记/1.m3u8"
+            <div data-config="https://raw.liucn.cc/box/m.json"
                 class="hover:bg-gray-200 transition-all duration-150 bg-white shadow rounded-lg p-4 cursor-pointer flex flex-col justify-center items-center">
                 <img class="w-1/3 mx-auto" src="./img/img_1.png" alt="Card Image">
-                <p class="text-center mt-2">云星</p>
+                <p class="text-center mt-2">老刘备</p>
             </div>
         </div>
     </div>
@@ -167,7 +167,8 @@
 
     <footer class="mt-8 bg-white text-black p-4 text-center">
         <p class="power">Powered By
-            <a href="https://github.com/yangxiaoge/webpages" class="text-blue-500 hover:text-blue-700"
+            <!-- href="https://github.com/yangxiaoge/webpages" -->
+            <a class="text-blue-500 hover:text-blue-700"
                 target="_blank">BruceYang</a>
         </p>
     </footer>
@@ -222,73 +223,50 @@
     }
 
     // 方法一：查询项目目录release下的文件
-    // axios.get('https://api.github.com/repos/fongmi/TV/contents/release').then(res => {
-    //     let liItemLeanback = '';
-    //     let liItemMobile = '';
-    //     let downloads = res.data;
-    //     let downloadList = document.querySelector('#download ul');
-    //     downloads.forEach(item => {
-    //         if (item.name.includes("arm")) {
-    //             if (item.name.includes("leanback")) {
-    //                 liItemLeanback += getTemplate(item.name, item.download_url, item.size);
-    //             } else {
-    //                 liItemMobile += getTemplate(item.name, item.download_url, item.size);
-    //             }
-    //         }
-    //     })
-    //     liItemLeanback += getTemplate('leanback-for-tv-box-android_4.1.apk', 'https://github.com/FongMi/TV/raw/kitkat/release/leanback.apk', 30217429);
-    //     downloadList.innerHTML = `
-    //         <h2 class="ml-2 text-3x3 font-bold my-0"><li><h2>📺电视版</h2></li><hr></h2>
-    //         ${liItemLeanback}
-    //         <h2 class="ml-2 text-3x3 font-bold my-0"><li><h2>📱手机版</h2></li><hr></h2>
-    //         ${liItemMobile} 
-    //         `;
-    // }).catch(err => {
-    //     Swal.fire({
-    //         icon: 'error',
-    //         title: '下载资源请求失败',
-    //         showConfirmButton: false,
-    //         timer: 1000
-    //     })
-    // })
-
-    // 方法二：查看github的Releases发版记录
-    axios.get('https://api.github.com/repos/fongmi/TV/releases/latest').then(res => {
+    axios.get('https://api.github.com/repos/fongmi/TV/contents/release').then(res => {
         let liItemLeanback = '';
         let liItemLeanbackRecommend = ''; //📺电视版apk推荐
         let liItemMobile = '';
         let liItemMobileRecommend = ''; //📱手机版apk推荐
-        let downloads = res.data.assets;
+        let downloads = res.data;
         let downloadList = document.querySelector('#download ul');
-        downloads.forEach(item => {
-            if (item.name.endsWith(".apk")) {
-                if (item.name.includes("leanback")) {
-                    if (isRecommend(item.name)) {
-                        liItemLeanbackRecommend = getTemplate(item.name, item.browser_download_url, item.size, item.updated_at);
-                    } else {
-                        liItemLeanback += getTemplate(item.name, item.browser_download_url, item.size, item.updated_at);
+
+        axios.get('https://api.github.com/repos/fongmi/TV/commits?path=release').then(commitRes => {
+            // console.log(commitRes.data[0])
+            if (commitRes.data && commitRes.data.length > 0) {
+                let updated_at = commitRes.data[0].commit.committer.date
+                // console.log("----------------------------updated_at=" + updated_at)
+                downloads.forEach(item => {
+                    if (item.name.endsWith(".apk")) {
+                        if (item.name.includes("leanback")) {
+                            if (isRecommend(item.name)) {
+                                liItemLeanbackRecommend = getTemplate(item.name, item.download_url, item.size, updated_at);
+                            } else {
+                                liItemLeanback += getTemplate(item.name, item.download_url, item.size, updated_at);
+                            }
+                        } else {
+                            if (isRecommend(item.name)) {
+                                liItemMobileRecommend = getTemplate(item.name, item.download_url, item.size, updated_at);
+                            } else {
+                                liItemMobile += getTemplate(item.name, item.download_url, item.size, updated_at);
+                            }
+                        }
                     }
-                } else {
-                    if (isRecommend(item.name)) {
-                        liItemMobileRecommend = getTemplate(item.name, item.browser_download_url, item.size, item.updated_at);
-                    } else {
-                        liItemMobile += getTemplate(item.name, item.browser_download_url, item.size, item.updated_at);
-                    }
+                })
+                if (liItemLeanbackRecommend) {
+                    liItemLeanback = liItemLeanbackRecommend + liItemLeanback;
                 }
-            }
-        })
-        if (liItemLeanbackRecommend) {
-            liItemLeanback = liItemLeanbackRecommend + liItemLeanback;
-        }
-        if (liItemMobileRecommend) {
-            liItemMobile = liItemMobileRecommend + liItemMobile;
-        }
-        downloadList.innerHTML = `
+                if (liItemMobileRecommend) {
+                    liItemMobile = liItemMobileRecommend + liItemMobile;
+                }
+                downloadList.innerHTML = `
             <h2 class="ml-2 text-3x3 font-bold my-0"><li><h2>📱手机版</h2></li><hr></h2>
             ${liItemMobile} 
             <h2 class="ml-2 text-3x3 font-bold my-0"><li><h2>📺电视版</h2></li><hr></h2>
             ${liItemLeanback}
             `;
+            }
+        })
     }).catch(err => {
         console.log(err)
         Swal.fire({
@@ -298,6 +276,53 @@
             timer: 1000
         })
     })
+
+    // 方法二：查看github的Releases发版记录
+    // axios.get('https://api.github.com/repos/fongmi/TV/releases/latest').then(res => {
+    //     let liItemLeanback = '';
+    //     let liItemLeanbackRecommend = ''; //📺电视版apk推荐
+    //     let liItemMobile = '';
+    //     let liItemMobileRecommend = ''; //📱手机版apk推荐
+    //     let downloads = res.data.assets;
+    //     let downloadList = document.querySelector('#download ul');
+    //     downloads.forEach(item => {
+    //         if (item.name.endsWith(".apk")) {
+    //             if (item.name.includes("leanback")) {
+    //                 if (isRecommend(item.name)) {
+    //                     liItemLeanbackRecommend = getTemplate(item.name, item.browser_download_url, item.size, item.updated_at);
+    //                 } else {
+    //                     liItemLeanback += getTemplate(item.name, item.browser_download_url, item.size, item.updated_at);
+    //                 }
+    //             } else {
+    //                 if (isRecommend(item.name)) {
+    //                     liItemMobileRecommend = getTemplate(item.name, item.browser_download_url, item.size, item.updated_at);
+    //                 } else {
+    //                     liItemMobile += getTemplate(item.name, item.browser_download_url, item.size, item.updated_at);
+    //                 }
+    //             }
+    //         }
+    //     })
+    //     if (liItemLeanbackRecommend) {
+    //         liItemLeanback = liItemLeanbackRecommend + liItemLeanback;
+    //     }
+    //     if (liItemMobileRecommend) {
+    //         liItemMobile = liItemMobileRecommend + liItemMobile;
+    //     }
+    //     downloadList.innerHTML = `
+    //         <h2 class="ml-2 text-3x3 font-bold my-0"><li><h2>📱手机版</h2></li><hr></h2>
+    //         ${liItemMobile}
+    //         <h2 class="ml-2 text-3x3 font-bold my-0"><li><h2>📺电视版</h2></li><hr></h2>
+    //         ${liItemLeanback}
+    //         `;
+    // }).catch(err => {
+    //     console.log(err)
+    //     Swal.fire({
+    //         icon: 'error',
+    //         title: '下载资源请求失败',
+    //         showConfirmButton: false,
+    //         timer: 1000
+    //     })
+    // })
 
 </script>
 
