@@ -241,7 +241,7 @@
     }
 
     // 方法一：查询项目目录release下的文件
-    axios.get('https://api.github.com/repos/fongmi/Release/contents/release').then(res => {
+    axios.get('https://api.github.com/repos/fongmi/Release/contents/apk/release').then(res => {
         let liItemLeanback = '';
         let liItemLeanbackRecommend = ''; //📺电视版apk推荐
         let liItemMobile = '';
@@ -249,7 +249,7 @@
         let downloads = res.data;
         let downloadList = document.querySelector('#download ul');
 
-        axios.get('https://api.github.com/repos/fongmi/TV/commits?path=release').then(commitRes => {
+        axios.get('https://api.github.com/repos/fongmi/Release/commits?path=/apk/release').then(commitRes => {
             // console.log(commitRes.data[0])
             if (commitRes.data && commitRes.data.length > 0) {
                 let updated_at = commitRes.data[0].commit.committer.date
