@@ -23,9 +23,11 @@
             <!-- 右边导航 -->
             <div class="space-x-4">
                 <a href="https://t.me/fongmi_offical/54024"
-                    class="transition-all duration-150 text-gray-700 hover:text-blue-500" target="_blank">作者电报群</a>
+                    class="transition-all duration-150 text-gray-700 hover:text-blue-500" target="_blank">FongMi电报群</a>
                 <a href="https://github.com/FongMi/TV"
-                    class="transition-all duration-150 text-gray-700 hover:text-blue-500" target="_blank">源码</a>
+                    class="transition-all duration-150 text-gray-700 hover:text-blue-500" target="_blank">FongMi源码</a>
+                <a href="https://github.com/FongMi/Release/tree/fongmi"
+                    class="transition-all duration-150 text-gray-700 hover:text-blue-500" target="_blank">FongMi版本</a>
             </div>
         </div>
     </nav>
@@ -339,6 +341,10 @@
         };
         //屏蔽鼠标右键
         document.oncontextmenu = function () {
+            return false;
+        }
+        //禁止选择
+        document.onselectstart = function () {
             return false;
         }
     }
