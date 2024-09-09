@@ -3,7 +3,7 @@
 
 <body>
   <div class="container">
-    <h1>收银宝会员信息备份</h1>
+    <h1>😎👍收银宝会员信息备份😎👍</h1>
     <input type="text" id="company" class="box" placeholder="企业号">
     <div></div>
     <input type="text" id="username" class="box" placeholder="用户名">
@@ -120,7 +120,7 @@
         .then(data => {
           jsonData = data.data;
           var memberData = JSON.stringify(jsonData)
-          document.getElementById('result').innerHTML = "⬇️⬇️⬇️会员信息展示⬇️⬇️⬇️";
+          document.getElementById('result').innerHTML = "会员信息展示";
           document.getElementById('result').style.color = 'green';
           // 保存到本地文件
           var blob = new Blob([memberData], { type: "text/plain;charset=utf-8" });
