@@ -1,0 +1,37 @@
+                {
+  "sid": 1223372036854776000,
+  "code": 0,
+  "slot_ad": [
+    {
+      "slot_id": 1231,
+      "ad": [
+        {
+          "ad_action": {
+            "action": "download"
+          },
+          "ad_content": {
+            "rating_count": 1048,
+            "rating": 4.5,
+            "title": "UC 浏览器",
+            "description": "把一亿新闻装进口袋",
+            "img_1": "http://junelegency.github.io/huichuan/dialog1.png"
+          },
+          "ad_id": 1566198,
+          "style": 13,
+          "furl": "http://www.failed_to_show.com",
+          "turl": [
+            "http://121.15.220.150/dd.myapp.com/16891/A68206B6EAB097BA1BA3E7603D5BBB76.apk?mkey=567ceb504940befb&f=1324&fsname=com.UCMobile_10.9.1_607.apk&p=.apk"
+          ],
+          "vurl": [
+            "http://huichuan.sm.cn/v?data=style7&stm={TS}",
+            "http://huichuan.sm.cn/v?data=style7_a&stm={TS}"
+          ],
+          "curl": [
+            "http://huichuan.sm.cn/c?data=style7&stm={TS}",
+            "http://huichuan.sm.cn/c?data=style7_a&stm={TS}"
+          ]
+        }
+      ]
+    }
+  ]
+}
