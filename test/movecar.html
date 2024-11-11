@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>通知车主挪车</title>
+<style>
+          * { box-sizing: border-box; margin: 0; padding: 0; }
+          body { font-family: Arial, sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh; background: #f0f2f5; color: #333; }
+          .container { text-align: center; padding: 20px; width: 100%; max-width: 400px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); background: #fff; }
+          h1 { font-size: 24px; margin-bottom: 20px; color: #007bff; }
+          p { margin-bottom: 20px; font-size: 16px; color: #555; }
+          button { 
+            width: 100%; 
+            padding: 15px; 
+            margin: 10px 0; 
+            font-size: 18px; 
+            font-weight: bold; 
+            color: #fff; 
+            border: none; 
+            border-radius: 6px; 
+            cursor: pointer; 
+            transition: background 0.3s; 
+          }
+          .notify-btn { background: #28a745; }
+          .notify-btn:hover { background: #218838; }
+          .call-btn { background: #17a2b8; }
+          .call-btn:hover { background: #138496; }
+        </style>
+</head>
+<body>
+<div class="container">
+    <h1>通知车主挪车</h1>
+    <p>如需通知车主，请点击以下按钮</p>
+    <button class="notify-btn" onclick="notifyOwner()">通知车主挪车</button>
+    <!-- <button class="call-btn" onclick="callOwner()">拨打车主电话</button> -->
+</div>
+<script>
+    //js加密
+    var _0xodC='jsjiami.com.v7';function _0x18c9(_0x31253c,_0x2c59f3){var _0x1306dc=_0x1306();return _0x18c9=function(_0x18c9f7,_0x2484e1){_0x18c9f7=_0x18c9f7-0xf9;var _0x9dce90=_0x1306dc[_0x18c9f7];if(_0x18c9['TywBSO']===undefined){var _0x5b4696=function(_0x283635){var _0x25c0f0='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var _0x449b82='',_0x5e9d26='';for(var _0x1bf1c2=0x0,_0x1d07fa,_0x3b23b3,_0x413023=0x0;_0x3b23b3=_0x283635['charAt'](_0x413023++);~_0x3b23b3&&(_0x1d07fa=_0x1bf1c2%0x4?_0x1d07fa*0x40+_0x3b23b3:_0x3b23b3,_0x1bf1c2++%0x4)?_0x449b82+=String['fromCharCode'](0xff&_0x1d07fa>>(-0x2*_0x1bf1c2&0x6)):0x0){_0x3b23b3=_0x25c0f0['indexOf'](_0x3b23b3);}for(var _0x3839ec=0x0,_0x4069c1=_0x449b82['length'];_0x3839ec<_0x4069c1;_0x3839ec++){_0x5e9d26+='%'+('00'+_0x449b82['charCodeAt'](_0x3839ec)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x5e9d26);};var _0x3c5b7f=function(_0x4bfe2c,_0x1a3399){var _0x372026=[],_0x1ad9bd=0x0,_0x125fb7,_0x29ea1f='';_0x4bfe2c=_0x5b4696(_0x4bfe2c);var _0x3a2295;for(_0x3a2295=0x0;_0x3a2295<0x100;_0x3a2295++){_0x372026[_0x3a2295]=_0x3a2295;}for(_0x3a2295=0x0;_0x3a2295<0x100;_0x3a2295++){_0x1ad9bd=(_0x1ad9bd+_0x372026[_0x3a2295]+_0x1a3399['charCodeAt'](_0x3a2295%_0x1a3399['length']))%0x100,_0x125fb7=_0x372026[_0x3a2295],_0x372026[_0x3a2295]=_0x372026[_0x1ad9bd],_0x372026[_0x1ad9bd]=_0x125fb7;}_0x3a2295=0x0,_0x1ad9bd=0x0;for(var _0x532666=0x0;_0x532666<_0x4bfe2c['length'];_0x532666++){_0x3a2295=(_0x3a2295+0x1)%0x100,_0x1ad9bd=(_0x1ad9bd+_0x372026[_0x3a2295])%0x100,_0x125fb7=_0x372026[_0x3a2295],_0x372026[_0x3a2295]=_0x372026[_0x1ad9bd],_0x372026[_0x1ad9bd]=_0x125fb7,_0x29ea1f+=String['fromCharCode'](_0x4bfe2c['charCodeAt'](_0x532666)^_0x372026[(_0x372026[_0x3a2295]+_0x372026[_0x1ad9bd])%0x100]);}return _0x29ea1f;};_0x18c9['FXLASz']=_0x3c5b7f,_0x31253c=arguments,_0x18c9['TywBSO']=!![];}var _0x53344d=_0x1306dc[0x0],_0x15df48=_0x18c9f7+_0x53344d,_0x3e8dc1=_0x31253c[_0x15df48];return!_0x3e8dc1?(_0x18c9['fGWnpC']===undefined&&(_0x18c9['fGWnpC']=!![]),_0x9dce90=_0x18c9['FXLASz'](_0x9dce90,_0x2484e1),_0x31253c[_0x15df48]=_0x9dce90):_0x9dce90=_0x3e8dc1,_0x9dce90;},_0x18c9(_0x31253c,_0x2c59f3);}if(function(_0x1c2c70,_0x2a7a38,_0x5bf427,_0x19e218,_0x38e644,_0x546756,_0x41dcc5){return _0x1c2c70=_0x1c2c70>>0x2,_0x546756='hs',_0x41dcc5='hs',function(_0x40ea12,_0x4e3ed2,_0x55da5d,_0xa6fefa,_0x15fa81){var _0x71c79e=_0x18c9;_0xa6fefa='tfi',_0x546756=_0xa6fefa+_0x546756,_0x15fa81='up',_0x41dcc5+=_0x15fa81,_0x546756=_0x55da5d(_0x546756),_0x41dcc5=_0x55da5d(_0x41dcc5),_0x55da5d=0x0;var _0x1457da=_0x40ea12();while(!![]&&--_0x19e218+_0x4e3ed2){try{_0xa6fefa=-parseInt(_0x71c79e(0x113,'hUh1'))/0x1+-parseInt(_0x71c79e(0x117,'$0Ij'))/0x2+-parseInt(_0x71c79e(0x122,'xUUB'))/0x3+-parseInt(_0x71c79e(0x112,'iKcR'))/0x4*(-parseInt(_0x71c79e(0x100,'OqMM'))/0x5)+parseInt(_0x71c79e(0x115,'9Gi&'))/0x6*(parseInt(_0x71c79e(0x12c,')Fr)'))/0x7)+-parseInt(_0x71c79e(0x102,'@TV1'))/0x8*(parseInt(_0x71c79e(0xfd,'xUUB'))/0x9)+parseInt(_0x71c79e(0x10d,'Oy6['))/0xa;}catch(_0x69445f){_0xa6fefa=_0x55da5d;}finally{_0x15fa81=_0x1457da[_0x546756]();if(_0x1c2c70<=_0x19e218)_0x55da5d?_0x38e644?_0xa6fefa=_0x15fa81:_0x38e644=_0x15fa81:_0x55da5d=_0x15fa81;else{if(_0x55da5d==_0x38e644['replace'](/[qRkylYrfVEbQJMxNTGu=]/g,'')){if(_0xa6fefa===_0x4e3ed2){_0x1457da['un'+_0x546756](_0x15fa81);break;}_0x1457da[_0x41dcc5](_0x15fa81);}}}}}(_0x5bf427,_0x2a7a38,function(_0x3ff590,_0x26162b,_0x172a02,_0x54aa8b,_0x226da1,_0x1a8314,_0x3b8c93){return _0x26162b='\x73\x70\x6c\x69\x74',_0x3ff590=arguments[0x0],_0x3ff590=_0x3ff590[_0x26162b](''),_0x172a02='\x72\x65\x76\x65\x72\x73\x65',_0x3ff590=_0x3ff590[_0x172a02]('\x76'),_0x54aa8b='\x6a\x6f\x69\x6e',(0x18b556,_0x3ff590[_0x54aa8b](''));});}(0x330,0x80a13,_0x1306,0xce),_0x1306){}function _0x1306(){var _0x36ca0a=(function(){return[_0xodC,'MqGjJbsjiGxambibr.TcYRQomfuY.kEvN7VyQfRl==','W43dVf4XW6bGWQjg','qtqhWQtdTsRdVrC','uSkMgG3cISoIWQFcPq','W4ZcP1LnyW','W7HCg8kDWR4lWQNcM8k9lGNcTYK','W4JcPvrjra','6yoI556G5y2+6ych5AsR6lAD77+16kYH56MY5zkT6yEY6k2044oh','i1ikCM0','WOVdJmoQW5FcPW','jSkCWR1FCa','A1eKW4PV','lrhcQ0hdGa','emkltd9L','W5a6vmkpW6m','W53cVSo3WQdcMG','nSkvs8k6pcW3W5n2mmkdWPhdOW','D2SyW4q5'].concat((function(){return['pgi9WOZdTW','eSk6WQbcwL87WObpW78uW5T5zSkkvG','6yoo55+25BAc5yY56ygS77+t','s8o1kKKfWRePWQtdMdaLW6BdMW','W4OzqCkNDmk9bcyFA8oZW7K','q8oVWOzPWOO','W5CAWQJcIXvip8oi','iCo5la7cRq','W7ioWPG5tvL8WOtcRCk2W5RcHGK','swVdIKLK','WPdcPGvPWQWXW71rBvyBW67dJq','WRK4W4FdSSkj','kSkjsY0','grLfW63dJa','WPi8W4ToAa','WO59WPpcSY4','6yod55Yb5yYG6ycK5yAI6zEZ776w6k+q5QkS5P26576O57MI6l+S5O2L44ol','W4GBqmkLC8k7cZqZvCo7W4S','b3XhsMK'].concat((function(){return['qSo8W6yAaaHSWPnLW5KjWRnI','W6zQFuznC0S/W6xdJhJcP8ovW5DwnCklWQWmpr9go27cOSo6W5Tzb8ksW57cRG','WOxdV8oIdComASoTW77cKxtdMrrzW6b/W7JcTxRcR8oFku91W5dcOZBcVq','je4jE3G','tvmUW4a8','oxHXEeG','caRcNI0YcmolvbiaW6/dTh0','WQZcJSow','5Ogi5AAK776a5P605lUc6z2f6kEb5Og35O+p6l+C77Y36k2r5y+95Pw85AAr55c244g0','6yo755+j5BsO5yY46ygH77Yc','WQTKamoqWPO2W6RdSmkTj2NdGW','tc3dIN7dTGdcJmkzuCoVW49LnmoBb8onWOLw','W63dUrywWQu','WQ55hSoKaa','WQunosex','WROoerK7','sSkIWQLRxfq4'];}()));}()));}());_0x1306=function(){return _0x36ca0a;};return _0x1306();};function notifyOwner(){var _0x1de2db=_0x18c9,_0x3ef4e3={'TGtsR':'Error\x20sending\x20notification:','xTYyJ':function(_0x3f78ce,_0x4c16f7){return _0x3f78ce(_0x4c16f7);},'ewEqx':_0x1de2db(0x11f,'1@8O'),'jydHr':_0x1de2db(0x12d,'4)PA'),'MrJHD':function(_0x57f69a,_0x3ea363){return _0x57f69a===_0x3ea363;},'BLPrx':function(_0x49fbbb,_0x860833){return _0x49fbbb===_0x860833;},'pWbPe':_0x1de2db(0xfa,'hUh1'),'ztmIT':function(_0x3ef469,_0x373496){return _0x3ef469(_0x373496);},'phLgz':_0x1de2db(0x12b,'9Gi&'),'wtOno':_0x1de2db(0x10f,'xUxq'),'CblZF':'通知发送失败，请稍后重试。','ORuyy':function(_0x2c709c,_0x1d6136){return _0x2c709c(_0x1d6136);},'jMTFV':function(_0x2e156f,_0x32e77c,_0x23fe12){return _0x2e156f(_0x32e77c,_0x23fe12);},'Ksogk':'https://wxpusher.zjiecode.com/api/send/message','BjOnJ':_0x1de2db(0x11b,'iKcR'),'HjgoI':_0x1de2db(0x110,'xUUB'),'qKYcn':'AT_O504pfzMBp4PRmOjYkCErdBbwv6HX66X','eorMI':_0x1de2db(0x12a,'dGt%'),'kQDak':_0x1de2db(0x123,'$b^q')};_0x3ef4e3[_0x1de2db(0x10a,'iKcR')](fetch,_0x3ef4e3[_0x1de2db(0x126,'ixB@')],{'method':_0x3ef4e3[_0x1de2db(0x116,'OqMM')],'headers':{'Content-Type':_0x3ef4e3[_0x1de2db(0x10b,')Fr)')]},'body':JSON['stringify']({'appToken':_0x3ef4e3[_0x1de2db(0x10e,'ixB@')],'content':_0x3ef4e3['eorMI'],'contentType':0x1,'uids':[_0x3ef4e3['kQDak']]})})['then'](_0x5b3970=>_0x5b3970['json']())['then'](_0x4b203c=>{var _0x3171db=_0x1de2db,_0x7f4e41={'FPoKk':_0x3ef4e3['jydHr'],'iCfql':function(_0x21aab1,_0x3234d6){var _0x3d428b=_0x18c9;return _0x3ef4e3[_0x3d428b(0x10c,'0BxO')](_0x21aab1,_0x3234d6);},'SkdAi':function(_0x4b42e8,_0x45ffa4){var _0x4aef09=_0x18c9;return _0x3ef4e3[_0x4aef09(0x127,'][uC')](_0x4b42e8,_0x45ffa4);},'mAkuK':function(_0x208c1e,_0x1e729e){return _0x3ef4e3['xTYyJ'](_0x208c1e,_0x1e729e);}};console[_0x3171db(0x129,'YoB)')](_0x3ef4e3[_0x3171db(0x11d,'vvvV')],_0x4b203c),_0x3ef4e3['BLPrx'](_0x4b203c['code'],0x3e8)?_0x3ef4e3[_0x3171db(0x118,'iaTo')]===_0x3171db(0x107,'xUUB')?_0x3ef4e3[_0x3171db(0xfb,'gu#t')](alert,_0x3ef4e3[_0x3171db(0x125,'EhST')]):(_0x4672f5[_0x3171db(0x11a,'GrlP')](_0x3ef4e3[_0x3171db(0x108,'ifng')],_0x3b3ca5),_0x3ef4e3['xTYyJ'](_0x310964,_0x3ef4e3[_0x3171db(0x106,'0xTF')])):_0x3ef4e3[_0x3171db(0x105,'EhST')]!==_0x3171db(0x11c,'BhEZ')?(_0x1bf1c2['log'](_0x7f4e41[_0x3171db(0x121,'][uC')],_0x1d07fa),_0x7f4e41[_0x3171db(0x101,'Qw[U')](_0x3b23b3['code'],0x3e8)?_0x7f4e41['SkdAi'](_0x4069c1,_0x3171db(0x111,'j)wo')):_0x7f4e41[_0x3171db(0x103,'Qw[U')](_0x4bfe2c,_0x3171db(0x104,'vvvV'))):_0x3ef4e3[_0x3171db(0xf9,'W%j[')](alert,_0x3ef4e3['CblZF']);})[_0x1de2db(0x114,'WSFh')](_0x226f7d=>{var _0xe91bc=_0x1de2db;console[_0xe91bc(0x109,'q3Nj')](_0xe91bc(0x124,'B7P@'),_0x226f7d),_0x3ef4e3['ORuyy'](alert,_0x3ef4e3[_0xe91bc(0xfc,'gu#t')]);});}function callOwner(){var _0x9f53e=_0x18c9,_0x10a2ce={'oQIZN':'tel:1999999xxxxx'};window[_0x9f53e(0xfe,'^imu')]['href']=_0x10a2ce[_0x9f53e(0x11e,'9Gi&')];}var version_ = 'jsjiami.com.v7';
+// function notifyOwner() {
+//     fetch("https://wxpusher.zjiecode.com/api/send/message", {
+//         method: "POST",
+//         headers: { "Content-Type": "application/json" },
+//         body: JSON.stringify({
+//             appToken: "AT_O504pfzMBp4PRxxxx", //替换成自己的token
+//             content: "您好，有人需要您挪车，请及时处理。",
+//             contentType: 1,
+//             uids: ["UID_TTkJkssdPxxxxx"] //替换uid
+//         })
+//     })
+//     .then(response => response.json())
+//     .then(data => {
+//         console.log("Notification sent:", data);
+//         if (data.code === 1000) {
+//             alert("通知已发送！");
+//         } else {
+//             alert("通知发送失败，请稍后重试。");
+//         }
+//     })
+//     .catch(error => {
+//         console.error("Error sending notification:", error);
+//         alert("通知发送出错，请检查网络连接。");
+//     });
+// }
+ 
+// function callOwner() {
+//     window.location.href = "tel:1999999xxxxx";
+// }
+</script>
+</body>
+</html>
