@@ -18,8 +18,7 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          # 教程：https://juejin.cn/post/7306442629318164543
-	  # dist 是编译产物目录名
+          # 教程：https://juejin.cn/post/7306442629318164543 dist 是编译产物目录名
           folder: dist
           branch: gh-pages
           token: ${{ secrets.ACCESS_TOKEN }}
