@@ -681,6 +681,20 @@
                             "url": "http://192.168.10.128:8080/admin/repos",
                             "favicon": "http://192.168.10.128:8080/favicon.ico",
                             "bgColor": "#12572f"
+                        },
+                        {
+                            "id": 1733977653496,
+                            "name": "条码",
+                            "url": "https://sheepyang2022.github.io/createBarcodeWeb/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1733977694401,
+                            "name": "隔空剪贴板",
+                            "url": "https://airclipbd.com/",
+                            "favicon": "",
+                            "bgColor": ""
                         }
                     ]
                 },
@@ -696,16 +710,84 @@
                             "bgColor": ""
                         },
                         {
-                            "id": 1733973394109,
-                            "name": "国家地图",
-                            "url": "https://bzdt.ch.mnr.gov.cn/download.html?superclassName=%25E4%25B8%25AD%25E5%259B%25BD%25E5%2585%25A8%25E5%259B%25BE",
+                            "id": 1733973451757,
+                            "name": "一网一匠",
+                            "url": "https://ywyj.cn",
                             "favicon": "",
                             "bgColor": ""
                         },
                         {
-                            "id": 1733973408017,
-                            "name": "汽车工业",
-                            "url": "https://www.miit.gov.cn/jgsj/zbys/qcgy/index.html",
+                            "id": 1733977540082,
+                            "name": "IP定位",
+                            "url": "https://qifu-api.baidubce.com/ip/local/geo/v1/district?",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1733977554352,
+                            "name": "时间戳",
+                            "url": "https://tool.lu/timestamp/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1733977584517,
+                            "name": "Blankj",
+                            "url": "https://github.com/Blankj/AndroidUtilCode/blob/master/lib/utilcode/README-CN.md",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1733977619542,
+                            "name": "经纬度定位",
+                            "url": "https://lbsyun.baidu.com/jsdemo/demo/yLngLatLocation.htm",
+                            "favicon": "",
+                            "bgColor": ""
+                        }
+                    ]
+                },
+                {
+                    "id": 1733977198191,
+                    "name": "翻译",
+                    "siteList": [
+                        {
+                            "id": 1733977221931,
+                            "name": "谷歌翻译",
+                            "url": "https://translate.google.com.hk/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1733977238847,
+                            "name": "百度翻译",
+                            "url": "https://fanyi.baidu.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1733977398042,
+                            "name": "Yandex翻译",
+                            "url": "https://translate.yandex.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1733977441142,
+                            "name": "腾讯翻译",
+                            "url": "https://transmart.qq.com/zh-CN/index",
+                            "favicon": "",
+                            "bgColor": ""
+                        }
+                    ]
+                },
+                {
+                    "id": 1733977480746,
+                    "name": "国家队",
+                    "siteList": [
+                        {
+                            "id": 1733973394109,
+                            "name": "国家地图",
+                            "url": "https://bzdt.ch.mnr.gov.cn/download.html?superclassName=%25E4%25B8%25AD%25E5%259B%25BD%25E5%2585%25A8%25E5%259B%25BE",
                             "favicon": "",
                             "bgColor": ""
                         },
@@ -717,16 +799,16 @@
                             "bgColor": ""
                         },
                         {
-                            "id": 1733973435868,
-                            "name": "合同示范文本库",
-                            "url": "https://htsfwb.samr.gov.cn",
+                            "id": 1733973408017,
+                            "name": "汽车工业",
+                            "url": "https://www.miit.gov.cn/jgsj/zbys/qcgy/index.html",
                             "favicon": "",
                             "bgColor": ""
                         },
                         {
-                            "id": 1733973451757,
-                            "name": "一网一匠",
-                            "url": "https://ywyj.cn",
+                            "id": 1733973435868,
+                            "name": "合同示范文本库",
+                            "url": "https://htsfwb.samr.gov.cn",
                             "favicon": "",
                             "bgColor": ""
                         }
@@ -793,13 +875,6 @@
                             "name": "java",
                             "url": "https://www.java.com/zh-CN/",
                             "favicon": ""
-                        },
-                        {
-                            "id": 1695432641799,
-                            "name": "Base",
-                            "url": "https://www.base-search.net/",
-                            "favicon": "https://www.base-search.net/base_favicon.ico",
-                            "bgColor": "#212b16"
                         },
                         {
                             "id": 1692631414869,
@@ -1675,13 +1750,6 @@
                             "bgColor": ""
                         },
                         {
-                            "id": 1695432641799,
-                            "name": "Base",
-                            "url": "https://www.base-search.net/",
-                            "favicon": "https://www.base-search.net/base_favicon.ico",
-                            "bgColor": ""
-                        },
-                        {
                             "id": 1695433186255,
                             "name": "Scholar",
                             "url": "https://scholar.cnki.net/",
@@ -2008,13 +2076,6 @@
                             "name": "iconfont",
                             "url": "https://www.iconfont.cn/",
                             "favicon": ""
-                        },
-                        {
-                            "id": 1695432641799,
-                            "name": "Base",
-                            "url": "https://www.base-search.net/",
-                            "favicon": "https://www.base-search.net/base_favicon.ico",
-                            "bgColor": "#333454"
                         },
                         {
                             "id": 1692627440840,
