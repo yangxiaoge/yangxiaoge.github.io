@@ -1,0 +1,2141 @@
+{
+    "data": [
+        {
+            "id": 1692883123738,
+            "name": "日常",
+            "groupList": [
+                {
+                    "id": 1692883177931,
+                    "name": "社交",
+                    "siteList": [
+                        {
+                            "id": 1692883198234,
+                            "name": "微博",
+                            "url": "https://weibo.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692883335754,
+                            "name": "知乎",
+                            "url": "https://www.zhihu.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692883352258,
+                            "name": "贴吧",
+                            "url": "https://tieba.baidu.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692883369946,
+                            "name": "豆瓣",
+                            "url": "https://www.douban.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692883452618,
+                            "name": "简书",
+                            "url": "https://www.jianshu.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692883480002,
+                            "name": "V2EX",
+                            "url": "https://www.v2ex.com/",
+                            "favicon": ""
+                        }
+                    ]
+                },
+                {
+                    "id": 1692884434110,
+                    "name": "门户",
+                    "siteList": [
+                        {
+                            "id": 1692884466502,
+                            "name": "腾讯网",
+                            "url": "https://www.qq.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692884480974,
+                            "name": "网易",
+                            "url": "https://www.163.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692884497365,
+                            "name": "凤凰网",
+                            "url": "https://www.ifeng.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692884521151,
+                            "name": "新浪",
+                            "url": "https://www.sina.com.cn/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692884536246,
+                            "name": "搜狐",
+                            "url": "https://www.sohu.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692884559685,
+                            "name": "央视网",
+                            "url": "https://www.cctv.com/",
+                            "favicon": ""
+                        }
+                    ]
+                },
+                {
+                    "id": 1692883510947,
+                    "name": "购物",
+                    "siteList": [
+                        {
+                            "id": 1692883557170,
+                            "name": "京东",
+                            "url": "https://www.jd.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692883576912,
+                            "name": "天猫",
+                            "url": "https://www.tmall.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692883591016,
+                            "name": "淘宝",
+                            "url": "https://www.taobao.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692883619568,
+                            "name": "唯品会",
+                            "url": "https://www.vip.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692883703466,
+                            "name": "小米有品",
+                            "url": "https://www.xiaomiyoupin.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692883793561,
+                            "name": "网易严选",
+                            "url": "https://you.163.com/",
+                            "favicon": ""
+                        }
+                    ]
+                },
+                {
+                    "id": 1692883809665,
+                    "name": "视频",
+                    "siteList": [
+                        {
+                            "id": 1692883898295,
+                            "name": "抖音",
+                            "url": "https://www.douyin.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692883824810,
+                            "name": "腾讯视频",
+                            "url": "https://v.qq.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692883852888,
+                            "name": "优酷",
+                            "url": "https://www.youku.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692883838008,
+                            "name": "爱奇艺",
+                            "url": "https://www.iqiyi.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692883885401,
+                            "name": "B站",
+                            "url": "https://www.bilibili.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692883920855,
+                            "name": "芒果TV",
+                            "url": "https://www.mgtv.com/",
+                            "favicon": ""
+                        }
+                    ]
+                },
+                {
+                    "id": 1692883966360,
+                    "name": "生活",
+                    "siteList": [
+                        {
+                            "id": 1692883988280,
+                            "name": "12306",
+                            "url": "https://www.12306.cn/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692884023200,
+                            "name": "携程",
+                            "url": "https://www.ctrip.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692884107976,
+                            "name": "美团",
+                            "url": "https://www.meituan.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692884141127,
+                            "name": "飞猪旅行",
+                            "url": "https://www.fliggy.com/",
+                            "favicon": "https://g.alicdn.com/trip/tools/img/favicon.ico",
+                            "bgColor": "#a96d65"
+                        },
+                        {
+                            "id": 1692884172703,
+                            "name": "小红书",
+                            "url": "https://www.xiaohongshu.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692884297823,
+                            "name": "下厨房",
+                            "url": "https://www.xiachufang.com/",
+                            "favicon": ""
+                        }
+                    ]
+                },
+                {
+                    "id": 1692884944628,
+                    "name": "财经",
+                    "siteList": [
+                        {
+                            "id": 1692884962403,
+                            "name": "雪球",
+                            "url": "https://xueqiu.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692884976691,
+                            "name": "新浪财经",
+                            "url": "https://finance.sina.com.cn/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692884996075,
+                            "name": "金融界",
+                            "url": "https://www.jrj.com.cn/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692885010380,
+                            "name": "第一财经",
+                            "url": "https://www.yicai.com/",
+                            "favicon": "",
+                            "bgColor": "#0b062c"
+                        },
+                        {
+                            "id": 1692885053243,
+                            "name": "21经济网",
+                            "url": "https://www.21jingji.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692885072699,
+                            "name": "凤凰财经",
+                            "url": "https://finance.ifeng.com/",
+                            "favicon": ""
+                        }
+                    ]
+                },
+                {
+                    "id": 1692887076500,
+                    "name": "银行",
+                    "siteList": [
+                        {
+                            "id": 1692887130186,
+                            "name": "建设银行",
+                            "url": "http://www.ccb.com/cn/home/indexv3.html",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692887195370,
+                            "name": "中国银行",
+                            "url": "https://www.boc.cn/",
+                            "favicon": "https://cdn.yhz610.com/navpwa/boc.png",
+                            "bgColor": "#241b20"
+                        },
+                        {
+                            "id": 1692887210755,
+                            "name": "工商银行",
+                            "url": "https://www.icbc.com.cn/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692887231644,
+                            "name": "农业银行",
+                            "url": "https://www.abchina.com/cn/",
+                            "favicon": "https://cdn.yhz610.com/navpwa/abchina.png",
+                            "bgColor": "#a5caa5"
+                        },
+                        {
+                            "id": 1692887267700,
+                            "name": "交通银行",
+                            "url": "https://www.bankcomm.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692887307266,
+                            "name": "招商银行",
+                            "url": "https://www.cmbchina.com/",
+                            "favicon": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1695436323706,
+            "name": "生活",
+            "groupList": [
+                {
+                    "id": 1695436380605,
+                    "name": "出行",
+                    "siteList": [
+                        {
+                            "id": 1695436404182,
+                            "name": "飞猪旅行",
+                            "url": "https://www.fliggy.com/",
+                            "favicon": "https://g.alicdn.com/trip/tools/img/favicon.ico?20131130",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695436426033,
+                            "name": "中国铁路",
+                            "url": "https://www.12306.cn/index/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695436475258,
+                            "name": "携程旅行",
+                            "url": "https://www.ctrip.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695436491428,
+                            "name": "去哪儿",
+                            "url": "https://www.qunar.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695436508182,
+                            "name": "马蜂窝",
+                            "url": "https://www.mafengwo.cn/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695436618422,
+                            "name": "同程旅行",
+                            "url": "https://www.ly.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        }
+                    ]
+                },
+                {
+                    "id": 1695436632625,
+                    "name": "健康",
+                    "siteList": [
+                        {
+                            "id": 1695436661545,
+                            "name": "默沙东",
+                            "url": "https://www.msdmanuals.cn/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695436886632,
+                            "name": "丁香园",
+                            "url": "https://www.dxy.cn/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695436714070,
+                            "name": "用药助手",
+                            "url": "https://drugs.dxy.cn/pc",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695436750660,
+                            "name": "药品查询",
+                            "url": "https://www.nmpa.gov.cn/datasearch/",
+                            "favicon": "https://www.nmpa.gov.cn/wbppimages/favicon.ico",
+                            "bgColor": "#6c9805"
+                        },
+                        {
+                            "id": 1695436840054,
+                            "name": "Cochrane",
+                            "url": "https://www.cochrane.org/zh-hans/evidence",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695436684899,
+                            "name": "丁香医生",
+                            "url": "https://dxy.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        }
+                    ]
+                },
+                {
+                    "id": 1695436914659,
+                    "name": "便民",
+                    "siteList": [
+                        {
+                            "id": 1695437798714,
+                            "name": "便民查询",
+                            "url": "https://www.bmcx.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695436941204,
+                            "name": "天气预报",
+                            "url": "https://www.windy.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695436995851,
+                            "name": "百度地图",
+                            "url": "https://map.baidu.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695437162230,
+                            "name": "查快递",
+                            "url": "https://www.kuaidi100.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695437057787,
+                            "name": "万年历",
+                            "url": "https://www.wnl.cc/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695437615691,
+                            "name": "宝贝回家",
+                            "url": "https://baobeihuijia.com/bbhj/",
+                            "favicon": "https://baobeihuijia.com/bbhj/assets/images/favicon.png",
+                            "bgColor": "#8b404a"
+                        }
+                    ]
+                },
+                {
+                    "id": 1695439118723,
+                    "name": "工作",
+                    "siteList": [
+                        {
+                            "id": 1695439146750,
+                            "name": "Boss直聘",
+                            "url": "https://www.zhipin.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695439210766,
+                            "name": "领英",
+                            "url": "https://www.linkedin.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695439190291,
+                            "name": "拉勾网",
+                            "url": "https://www.lagou.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695439169220,
+                            "name": "前程无忧",
+                            "url": "https://www.51job.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695439231678,
+                            "name": "中华英才",
+                            "url": "https://www.chinahr.com/",
+                            "favicon": "",
+                            "bgColor": "#09083b"
+                        },
+                        {
+                            "id": 1695439261035,
+                            "name": "猎聘",
+                            "url": "https://www.liepin.com/",
+                            "favicon": "",
+                            "bgColor": "#1e763f"
+                        }
+                    ]
+                },
+                {
+                    "id": 1695439322419,
+                    "name": "菜谱",
+                    "siteList": [
+                        {
+                            "id": 1695439377856,
+                            "name": "美食天下",
+                            "url": "https://www.meishichina.com/",
+                            "favicon": "https://static.meishichina.com/a1/img/fav.ico",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695439434112,
+                            "name": "豆果美食",
+                            "url": "https://www.douguo.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695439450663,
+                            "name": "食谱秀",
+                            "url": "https://www.shipuxiu.com/",
+                            "favicon": "",
+                            "bgColor": "#36b736"
+                        },
+                        {
+                            "id": 1695439485403,
+                            "name": "美食杰",
+                            "url": "https://www.meishij.net/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695439509103,
+                            "name": "下厨房",
+                            "url": "https://www.xiachufang.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695439664846,
+                            "name": "食谱",
+                            "url": "https://cook.yhz610.com/",
+                            "favicon": "https://cook.yhz610.com/favicon.svg",
+                            "bgColor": "#2f0137"
+                        }
+                    ]
+                },
+                {
+                    "id": 1695437820622,
+                    "name": "银行",
+                    "siteList": [
+                        {
+                            "id": 1695437857696,
+                            "name": "兴业银行",
+                            "url": "https://www.cib.com.cn/",
+                            "favicon": "https://www.cib.com.cn/favicon.ico",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695438027168,
+                            "name": "中信银行",
+                            "url": "https://www.citicbank.com/",
+                            "favicon": "https://www.citicbank.com/images/share_logo1.jpg",
+                            "bgColor": "#3e69a9"
+                        },
+                        {
+                            "id": 1695438198778,
+                            "name": "平安银行",
+                            "url": "https://bank.pingan.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695438260272,
+                            "name": "民生银行",
+                            "url": "https://www.cmbc.com.cn/",
+                            "favicon": "https://cdn.yhz610.com/navpwa/cmbc.png",
+                            "bgColor": "#0b047e"
+                        },
+                        {
+                            "id": 1695438313422,
+                            "name": "光大银行",
+                            "url": "https://www.cebbank.com/",
+                            "favicon": "https://cdn.yhz610.com/navpwa/cebbank.png",
+                            "bgColor": "#6c9805"
+                        },
+                        {
+                            "id": 1695438337215,
+                            "name": "浦发银行",
+                            "url": "https://www.spdb.com.cn/",
+                            "favicon": "https://www.spdb.com.cn/images/favicon.ico",
+                            "bgColor": "#497321"
+                        }
+                    ]
+                },
+                {
+                    "id": 1695439872715,
+                    "name": "其他",
+                    "siteList": [
+                        {
+                            "id": 1695439907630,
+                            "name": "央视频道",
+                            "url": "https://tv.cctv.com/live/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695440085275,
+                            "name": "中国体彩",
+                            "url": "https://www.lottery.gov.cn/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695440119945,
+                            "name": "汽车之家",
+                            "url": "https://www.autohome.com.cn/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695440153445,
+                            "name": "东方财富",
+                            "url": "https://www.eastmoney.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695440182419,
+                            "name": "天天基金",
+                            "url": "https://fund.eastmoney.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695440391003,
+                            "name": "在线电台",
+                            "url": "https://www.diantaiwang.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1682952453886,
+            "name": "娱乐",
+            "groupList": [
+                {
+                    "id": 1692885324421,
+                    "name": "直播",
+                    "siteList": [
+                        {
+                            "id": 1692885650114,
+                            "name": "bilibili",
+                            "url": "https://live.bilibili.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1692885347405,
+                            "name": "斗鱼",
+                            "url": "https://www.douyu.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692885370137,
+                            "name": "虎牙",
+                            "url": "https://www.huya.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692885533433,
+                            "name": "YY直播",
+                            "url": "https://www.yy.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692885697600,
+                            "name": "CCTV",
+                            "url": "https://tv.cctv.com/live/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692885846759,
+                            "name": "抖音直播",
+                            "url": "https://live.douyin.com/",
+                            "favicon": ""
+                        }
+                    ]
+                },
+                {
+                    "id": 1692886099632,
+                    "name": "游戏",
+                    "siteList": [
+                        {
+                            "id": 1692886114255,
+                            "name": "steam",
+                            "url": "https://store.steampowered.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692886243544,
+                            "name": "育碧游戏",
+                            "url": "https://zh-cn.ubisoft.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692886481718,
+                            "name": "EA",
+                            "url": "https://www.ea.com/zh-cn",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692886133959,
+                            "name": "xbox",
+                            "url": "https://www.xbox.com/zh-CN/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692886193967,
+                            "name": "bethesda",
+                            "url": "https://bethesda.net/zh-CN/dashboard",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692886338918,
+                            "name": "taptap",
+                            "url": "https://www.taptap.cn/",
+                            "favicon": ""
+                        }
+                    ]
+                },
+                {
+                    "id": 1683445511073,
+                    "name": "视频",
+                    "siteList": [
+                        {
+                            "id": 1692625671022,
+                            "name": "bilibili",
+                            "url": "https://www.bilibili.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1683445731544,
+                            "name": "西瓜视频",
+                            "url": "https://www.ixigua.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692625705382,
+                            "name": "YouTube",
+                            "url": "https://www.youtube.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1683445638708,
+                            "name": "爱奇艺",
+                            "url": "https://www.iqiyi.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692625737494,
+                            "name": "奈飞",
+                            "url": "https://media.netflix.com/zh_cn/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692625928165,
+                            "name": "咪咕视频",
+                            "url": "https://www.miguvideo.com/",
+                            "favicon": ""
+                        }
+                    ]
+                },
+                {
+                    "id": 1692625974621,
+                    "name": "音乐",
+                    "siteList": [
+                        {
+                            "id": 1692625992366,
+                            "name": "QQ音乐",
+                            "url": "https://y.qq.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692626008998,
+                            "name": "网易云",
+                            "url": "https://music.163.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692626023605,
+                            "name": "酷狗",
+                            "url": "https://www.kugou.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692626038158,
+                            "name": "酷我",
+                            "url": "http://www.kuwo.cn/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692626121861,
+                            "name": "Spotify",
+                            "url": "https://open.spotify.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692626200341,
+                            "name": "豆瓣音乐",
+                            "url": "https://music.douban.com/",
+                            "favicon": ""
+                        }
+                    ]
+                },
+                {
+                    "id": 1692887597756,
+                    "name": "动漫",
+                    "siteList": [
+                        {
+                            "id": 1692887645929,
+                            "name": "bilibili漫画",
+                            "url": "https://manga.bilibili.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692887675913,
+                            "name": "腾讯动漫",
+                            "url": "https://ac.qq.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692887709895,
+                            "name": "快看漫画",
+                            "url": "https://www.kuaikanmanhua.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692887754479,
+                            "name": "极速漫画",
+                            "url": "https://www.1kkk.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692887789927,
+                            "name": "X漫画",
+                            "url": "https://www.xmanhua.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692887845024,
+                            "name": "动漫啦",
+                            "url": "https://www.dongman.la",
+                            "favicon": ""
+                        }
+                    ]
+                },
+                {
+                    "id": 1692886770653,
+                    "name": "小说",
+                    "siteList": [
+                        {
+                            "id": 1692886804892,
+                            "name": "起点",
+                            "url": "https://www.qidian.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692886865548,
+                            "name": "潇湘学院",
+                            "url": "https://www.xxsy.net/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692886883451,
+                            "name": "晋江文学",
+                            "url": "https://www.jjwxc.net/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692886908988,
+                            "name": "红袖添香",
+                            "url": "https://www.hongxiu.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692886938955,
+                            "name": "纵横",
+                            "url": "https://www.zongheng.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692886968516,
+                            "name": "QQ阅读",
+                            "url": "https://book.qq.com/",
+                            "favicon": ""
+                        }
+                    ]
+                },
+                {
+                    "id": 1692887878154,
+                    "name": "体育",
+                    "siteList": [
+                        {
+                            "id": 1692887885936,
+                            "name": "腾讯体育",
+                            "url": "https://sports.qq.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692887903167,
+                            "name": "新浪体育",
+                            "url": "https://sports.sina.com.cn/",
+                            "favicon": "https://www.sina.com.cn/favicon.ico",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1692887928375,
+                            "name": "央视体育",
+                            "url": "https://sports.cctv.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692887945903,
+                            "name": "NBA中国",
+                            "url": "https://china.nba.cn/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692887971367,
+                            "name": "直播8",
+                            "url": "https://www.zhibo8.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692888036919,
+                            "name": "虎扑",
+                            "url": "https://www.hupu.com/",
+                            "favicon": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1695431613673,
+            "name": "学习",
+            "groupList": [
+                {
+                    "id": 1695431740830,
+                    "name": "文库",
+                    "siteList": [
+                        {
+                            "id": 1695431962511,
+                            "name": "智库",
+                            "url": "https://doc.mbalib.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695432171831,
+                            "name": "知海",
+                            "url": "https://www.zhwenku.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695431812895,
+                            "name": "360文库",
+                            "url": "https://wenku.so.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695431887080,
+                            "name": "豆丁",
+                            "url": "https://www.docin.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695431833767,
+                            "name": "道客巴巴",
+                            "url": "https://www.doc88.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695431922904,
+                            "name": "合同范文",
+                            "url": "https://cont.12315.cn/",
+                            "favicon": "",
+                            "bgColor": ""
+                        }
+                    ]
+                },
+                {
+                    "id": 1695432055343,
+                    "name": "学术",
+                    "siteList": [
+                        {
+                            "id": 1695432250361,
+                            "name": "谷歌学术",
+                            "url": "https://scholar.google.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695432641799,
+                            "name": "Base",
+                            "url": "https://www.base-search.net/",
+                            "favicon": "https://www.base-search.net/base_favicon.ico",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695433186255,
+                            "name": "Scholar",
+                            "url": "https://scholar.cnki.net/",
+                            "favicon": "",
+                            "bgColor": "#3b6921"
+                        },
+                        {
+                            "id": 1695432322512,
+                            "name": "万方数据",
+                            "url": "https://www.wanfangdata.com.cn/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695432751110,
+                            "name": "OpenAccess",
+                            "url": "https://www.oalib.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695431763296,
+                            "name": "知网",
+                            "url": "https://www.cnki.net/",
+                            "favicon": "",
+                            "bgColor": ""
+                        }
+                    ]
+                },
+                {
+                    "id": 1695433368077,
+                    "name": "词典",
+                    "siteList": [
+                        {
+                            "id": 1695433401115,
+                            "name": "剑桥词典",
+                            "url": "https://dictionary.cambridge.org/zhs/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695433462806,
+                            "name": "汉语词典",
+                            "url": "https://www.zdic.net/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695433497414,
+                            "name": "维基词典",
+                            "url": "https://zh.wiktionary.org/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695433545630,
+                            "name": "柯林斯词典",
+                            "url": "https://www.collinsdictionary.com/zh/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695433627127,
+                            "name": "默沙东手册",
+                            "url": "https://www.msdmanuals.cn/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695433382623,
+                            "name": "有道",
+                            "url": "https://www.youdao.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        }
+                    ]
+                },
+                {
+                    "id": 1695433858950,
+                    "name": "查询",
+                    "siteList": [
+                        {
+                            "id": 1695433870749,
+                            "name": "学信网",
+                            "url": "https://www.chsi.com.cn/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695433909964,
+                            "name": "考试报名",
+                            "url": "https://www.neea.edu.cn/html1/folder/1607/298-1.htm",
+                            "favicon": "",
+                            "bgColor": "#536f56"
+                        },
+                        {
+                            "id": 1695433941561,
+                            "name": "成绩查询",
+                            "url": "https://cjcx.neea.edu.cn/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695434085438,
+                            "name": "证书查询",
+                            "url": "https://zscx.neea.edu.cn/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695434117523,
+                            "name": "托福网考",
+                            "url": "https://toefl.neea.cn/",
+                            "favicon": "",
+                            "bgColor": "#032e51"
+                        },
+                        {
+                            "id": 1695434468365,
+                            "name": "注册会计师",
+                            "url": "http://acc.mof.gov.cn/",
+                            "favicon": "https://www.nmpa.gov.cn/wbppimages/favicon.ico",
+                            "bgColor": "#762d56"
+                        }
+                    ]
+                },
+                {
+                    "id": 1695434540084,
+                    "name": "公务员",
+                    "siteList": [
+                        {
+                            "id": 1695434777029,
+                            "name": "中国人事",
+                            "url": "http://cpta.mohrss.gov.cn/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695434692029,
+                            "name": "国家公务员",
+                            "url": "http://www.scs.gov.cn/",
+                            "favicon": "",
+                            "bgColor": "#10062b"
+                        },
+                        {
+                            "id": 1695434620968,
+                            "name": "华图在线",
+                            "url": "https://v.huatu.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695434553310,
+                            "name": "中公教育",
+                            "url": "https://www.offcn.com/gwy/",
+                            "favicon": "",
+                            "bgColor": "#fdac8e"
+                        },
+                        {
+                            "id": 1695434927228,
+                            "name": "公务员网",
+                            "url": "https://gongwuyuan.eol.cn/guojia/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695434963607,
+                            "name": "公职咨询",
+                            "url": "http://www.chinagwyw.org/zkgg/gkjz/gjl/",
+                            "favicon": "",
+                            "bgColor": ""
+                        }
+                    ]
+                },
+                {
+                    "id": 1695435069921,
+                    "name": "专业",
+                    "siteList": [
+                        {
+                            "id": 1695435157377,
+                            "name": "中国科学院",
+                            "url": "https://www.cas.cn/",
+                            "favicon": "https://www.cas.cn/lib/images/favicon.png",
+                            "bgColor": "#fe2c28"
+                        },
+                        {
+                            "id": 1695435079291,
+                            "name": "人工智能",
+                            "url": "https://www.caai.cn/",
+                            "favicon": "https://cdn.yhz610.com/navpwa/rgzn.png",
+                            "bgColor": "#5c1d57"
+                        },
+                        {
+                            "id": 1695435177762,
+                            "name": "计算机学会",
+                            "url": "https://www.ccf.org.cn/",
+                            "favicon": "https://cdn.yhz610.com/navpwa/jsjxh.png",
+                            "bgColor": "#0519c7"
+                        },
+                        {
+                            "id": 1695435227810,
+                            "name": "生物医学",
+                            "url": "http://www.csbme.org/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695435337189,
+                            "name": "国际关系",
+                            "url": "https://www.ciis.org.cn/",
+                            "favicon": "https://www.ciis.org.cn/images/favicon.ico",
+                            "bgColor": "#3d1c0c"
+                        },
+                        {
+                            "id": 1695435418202,
+                            "name": "建筑设计",
+                            "url": "https://csadi.com.cn/",
+                            "favicon": "",
+                            "bgColor": ""
+                        }
+                    ]
+                },
+                {
+                    "id": 1695435490128,
+                    "name": "网课",
+                    "siteList": [
+                        {
+                            "id": 1695435505149,
+                            "name": "网易公开课",
+                            "url": "https://open.163.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695435536512,
+                            "name": "网易云课堂",
+                            "url": "https://study.163.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695435557590,
+                            "name": "慕课网",
+                            "url": "https://www.imooc.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695435591978,
+                            "name": "爱课程",
+                            "url": "https://www.icourses.cn/home/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695435690169,
+                            "name": "蓝桥云课",
+                            "url": "https://www.lanqiao.cn/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695435733728,
+                            "name": "极客时间",
+                            "url": "https://time.geekbang.org/",
+                            "favicon": "",
+                            "bgColor": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1683446922689,
+            "name": "开发",
+            "groupList": [
+                {
+                    "id": 1695392645525,
+                    "name": "前端",
+                    "siteList": [
+                        {
+                            "id": 1692630685199,
+                            "name": "bootstrap",
+                            "url": "https://getbootstrap.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1683458867009,
+                            "name": "React",
+                            "url": "https://react.docschina.org/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1683458933651,
+                            "name": "Vue",
+                            "url": "https://cn.vuejs.org/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695393075158,
+                            "name": "Foundation",
+                            "url": "https://get.foundation/",
+                            "favicon": "",
+                            "bgColor": "#2422f5"
+                        },
+                        {
+                            "id": 1695392978820,
+                            "name": "Svelte",
+                            "url": "https://svelte.dev/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695393179546,
+                            "name": "Pure",
+                            "url": "https://purecss.io/",
+                            "favicon": "",
+                            "bgColor": ""
+                        }
+                    ]
+                },
+                {
+                    "id": 1692630635775,
+                    "name": "后端",
+                    "siteList": [
+                        {
+                            "id": 1692630641456,
+                            "name": "java",
+                            "url": "https://www.java.com/zh-CN/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1695432641799,
+                            "name": "Kotlin",
+                            "url": "https://kotlinlang.org/",
+                            "favicon": "",
+                            "bgColor": "#33582a"
+                        },
+                        {
+                            "id": 1692631414869,
+                            "name": "Python",
+                            "url": "https://docs.python.org/zh-cn",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1692631164262,
+                            "name": "PHP",
+                            "url": "https://www.php.net/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692631274421,
+                            "name": "Go",
+                            "url": "https://go.dev/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692630855417,
+                            "name": "spring",
+                            "url": "https://spring.io/",
+                            "favicon": ""
+                        }
+                    ]
+                },
+                {
+                    "id": 1683447260831,
+                    "name": "集成部署",
+                    "siteList": [
+                        {
+                            "id": 1683447074735,
+                            "name": "Github",
+                            "url": "https://github.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692626335524,
+                            "name": "vercel",
+                            "url": "https://vercel.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692631673108,
+                            "name": "Netlify",
+                            "url": "https://www.netlify.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1683447295377,
+                            "name": "Gitlab",
+                            "url": "https://gitlab.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692631629660,
+                            "name": "Replit",
+                            "url": "https://replit.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1683447319359,
+                            "name": "cloudflare",
+                            "url": "https://pages.cloudflare.com/",
+                            "favicon": ""
+                        }
+                    ]
+                },
+                {
+                    "id": 1683447020506,
+                    "name": "社区",
+                    "siteList": [
+                        {
+                            "id": 1683447199465,
+                            "name": "V2ex",
+                            "url": "https://www.v2ex.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692629998513,
+                            "name": "博客园",
+                            "url": "https://www.cnblogs.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1683447052727,
+                            "name": "稀土掘金",
+                            "url": "https://juejin.cn/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1683447183594,
+                            "name": "思否",
+                            "url": "https://segmentfault.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692630022017,
+                            "name": "开源中国",
+                            "url": "https://www.oschina.net/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692629966665,
+                            "name": "开发者",
+                            "url": "https://toutiao.io/",
+                            "favicon": "",
+                            "bgColor": ""
+                        }
+                    ]
+                },
+                {
+                    "id": 1683458693922,
+                    "name": "云服务",
+                    "siteList": [
+                        {
+                            "id": 1683458701435,
+                            "name": "阿里云",
+                            "url": "https://www.aliyun.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1683458709123,
+                            "name": "腾讯云",
+                            "url": "https://cloud.tencent.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1683458738963,
+                            "name": "华为云",
+                            "url": "https://www.huaweicloud.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1683458727144,
+                            "name": "谷歌云",
+                            "url": "https://cloud.google.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1683458716567,
+                            "name": "AWS",
+                            "url": "https://aws.amazon.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1683458750804,
+                            "name": "Cloudflare",
+                            "url": "https://www.cloudflare.com/",
+                            "favicon": ""
+                        }
+                    ]
+                },
+                {
+                    "id": 1692630315569,
+                    "name": "学习",
+                    "siteList": [
+                        {
+                            "id": 1692630321129,
+                            "name": "w3school",
+                            "url": "https://www.w3school.com.cn/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692630336416,
+                            "name": "菜鸟教程",
+                            "url": "https://www.runoob.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1683458900897,
+                            "name": "Uni-app",
+                            "url": "https://uniapp.dcloud.net.cn/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1683458966567,
+                            "name": "JQuery",
+                            "url": "https://jquery.cuishifeng.cn/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692630446536,
+                            "name": "廖雪峰",
+                            "url": "https://www.liaoxuefeng.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692630083018,
+                            "name": "CSDN",
+                            "url": "https://www.csdn.net/",
+                            "favicon": ""
+                        }
+                    ]
+                },
+                {
+                    "id": 1683458769247,
+                    "name": "文档",
+                    "siteList": [
+                        {
+                            "id": 1683458815984,
+                            "name": "Vue",
+                            "url": "https://cn.vuejs.org/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1683458778330,
+                            "name": "MDN",
+                            "url": "https://developer.mozilla.org/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1683458788774,
+                            "name": "Android",
+                            "url": "https://developer.android.com/docs",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1683458797891,
+                            "name": "Apple",
+                            "url": "https://developer.apple.com/cn/documentation/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1683458807999,
+                            "name": "W3school",
+                            "url": "https://www.w3school.com.cn/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1683458953528,
+                            "name": "MybatisPlus",
+                            "url": "https://baomidou.com/pages/24112f/",
+                            "favicon": "",
+                            "bgColor": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1692626628275,
+            "name": "设计",
+            "groupList": [
+                {
+                    "id": 1692626637699,
+                    "name": "灵感",
+                    "siteList": [
+                        {
+                            "id": 1692626725580,
+                            "name": "ant.design",
+                            "url": "https://ant.design/index-cn",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692626781554,
+                            "name": "pinterest",
+                            "url": "https://www.pinterest.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692626830850,
+                            "name": "dribbble",
+                            "url": "https://dribbble.com/shots",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692626849580,
+                            "name": "behance",
+                            "url": "https://www.behance.net/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692626873658,
+                            "name": "花瓣",
+                            "url": "https://huaban.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692627035451,
+                            "name": "uplabs",
+                            "url": "https://www.uplabs.com/",
+                            "favicon": ""
+                        }
+                    ]
+                },
+                {
+                    "id": 1692627324506,
+                    "name": "图标",
+                    "siteList": [
+                        {
+                            "id": 1692627331161,
+                            "name": "iconfont",
+                            "url": "https://www.iconfont.cn/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692627486048,
+                            "name": "Yesicon",
+                            "url": "https://yesicon.app/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1692627440840,
+                            "name": "Project",
+                            "url": "https://thenounproject.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1692627508897,
+                            "name": "icons8",
+                            "url": "https://icons8.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692627535857,
+                            "name": "iconpark",
+                            "url": "https://iconpark.oceanengine.com/home",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692627737975,
+                            "name": "flaticon",
+                            "url": "https://www.flaticon.com/",
+                            "favicon": ""
+                        }
+                    ]
+                },
+                {
+                    "id": 1692627768835,
+                    "name": "字体",
+                    "siteList": [
+                        {
+                            "id": 1692628113088,
+                            "name": "fontspace",
+                            "url": "https://www.fontspace.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692628145751,
+                            "name": "字体天下",
+                            "url": "https://www.fonts.net.cn/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692628250479,
+                            "name": "谷歌字体",
+                            "url": "https://fonts.google.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692628285703,
+                            "name": "Squirrel",
+                            "url": "https://www.fontsquirrel.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1692628316415,
+                            "name": "DaFont",
+                            "url": "https://www.dafont.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692628426607,
+                            "name": "1001fonts",
+                            "url": "https://www.1001fonts.com/",
+                            "favicon": "",
+                            "bgColor": "#6b9a1c"
+                        }
+                    ]
+                },
+                {
+                    "id": 1692628507390,
+                    "name": "配色",
+                    "siteList": [
+                        {
+                            "id": 1692628708638,
+                            "name": "colorhunt",
+                            "url": "https://colorhunt.co/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692628664413,
+                            "name": "colordrop",
+                            "url": "https://colordrop.io/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692628811037,
+                            "name": "materialui",
+                            "url": "https://materialui.co/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692628541415,
+                            "name": "adobe",
+                            "url": "https://color.adobe.com/zh/create/color-wheel",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1692628601607,
+                            "name": "coolors",
+                            "url": "https://coolors.co/palettes/trending",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692628645077,
+                            "name": "Toptal",
+                            "url": "https://www.toptal.com/designers/colourcode",
+                            "favicon": "",
+                            "bgColor": ""
+                        }
+                    ]
+                },
+                {
+                    "id": 1692629001285,
+                    "name": "工具",
+                    "siteList": [
+                        {
+                            "id": 1692629565202,
+                            "name": "Axure",
+                            "url": "https://www.axure.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692629007941,
+                            "name": "pixso",
+                            "url": "https://pixso.cn/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692629037420,
+                            "name": "墨刀",
+                            "url": "https://modao.cc/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692629073956,
+                            "name": "spline",
+                            "url": "https://spline.design/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692629214691,
+                            "name": "miro",
+                            "url": "https://miro.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692629383851,
+                            "name": "Fabrie",
+                            "url": "https://www.fabrie.cn/home",
+                            "favicon": ""
+                        }
+                    ]
+                },
+                {
+                    "id": 1695391445689,
+                    "name": "教程",
+                    "siteList": [
+                        {
+                            "id": 1692626953555,
+                            "name": "优设教程",
+                            "url": "https://uiiiuiii.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1695391616513,
+                            "name": "优优教程",
+                            "url": "https://uiiiuiii.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1692626889270,
+                            "name": "酷站",
+                            "url": "https://www.zcool.com.cn/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692627100170,
+                            "name": "美叶",
+                            "url": "https://www.meiye.art/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1695391578969,
+                            "name": "TUTS+",
+                            "url": "https://design.tutsplus.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695391655121,
+                            "name": "Medium",
+                            "url": "https://medium.design/",
+                            "favicon": "",
+                            "bgColor": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1692708991708,
+            "name": "AI",
+            "groupList": [
+                {
+                    "id": 1692709046762,
+                    "name": "ChatGPT",
+                    "siteList": [
+                        {
+                            "id": 1692709141937,
+                            "name": "豆包",
+                            "url": "https://www.doubao.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692709257840,
+                            "name": "通义千问",
+                            "url": "https://tongyi.aliyun.com/qianwen/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692709291217,
+                            "name": "文心一言",
+                            "url": "https://yiyan.baidu.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692709314169,
+                            "name": "讯飞星火",
+                            "url": "https://xinghuo.xfyun.cn/desk?ch=xhweb_ril",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692709225457,
+                            "name": "腾讯元宝",
+                            "url": "https://yuanbao.tencent.com/chat",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692709180265,
+                            "name": "poe",
+                            "url": "https://poe.com/",
+                            "favicon": ""
+                        }
+                    ]
+                },
+                {
+                    "id": 1692710171196,
+                    "name": "编程",
+                    "siteList": [
+                        {
+                            "id": 1692710182015,
+                            "name": "codeium",
+                            "url": "https://codeium.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692710197045,
+                            "name": "cursor",
+                            "url": "https://www.cursor.so/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692710271774,
+                            "name": "cody",
+                            "url": "https://sourcegraph.com/get-cody",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692710334591,
+                            "name": "GoogleAI",
+                            "url": "https://ai.google/build/machine-learning/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1692710392702,
+                            "name": "regex",
+                            "url": "https://regex.ai/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692710531805,
+                            "name": "teamsmart",
+                            "url": "https://www.teamsmart.ai/",
+                            "favicon": ""
+                        }
+                    ]
+                },
+                {
+                    "id": 1692709388136,
+                    "name": "写作",
+                    "siteList": [
+                        {
+                            "id": 1692709403400,
+                            "name": "Notion AI",
+                            "url": "https://www.notion.so/product/ai",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692709450905,
+                            "name": "typeset",
+                            "url": "https://typeset.io/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692709483354,
+                            "name": "magickpen",
+                            "url": "https://magickpen.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692709542367,
+                            "name": "hoppycopy",
+                            "url": "https://www.hoppycopy.co/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692709514880,
+                            "name": "cowriter",
+                            "url": "https://cowriter.org/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692709620655,
+                            "name": "Jenni Ai",
+                            "url": "https://jenni.ai/",
+                            "favicon": ""
+                        }
+                    ]
+                },
+                {
+                    "id": 1692709645032,
+                    "name": "图片",
+                    "siteList": [
+                        {
+                            "id": 1692709660399,
+                            "name": "pixelbin",
+                            "url": "https://www.pixelbin.io/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692709871199,
+                            "name": "phygital",
+                            "url": "https://phygital.plus/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692709932640,
+                            "name": "media",
+                            "url": "https://www.media.io/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692711283595,
+                            "name": "Playground",
+                            "url": "https://playgroundai.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1692711306754,
+                            "name": "leonardo",
+                            "url": "https://leonardo.ai/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692711394451,
+                            "name": "dreamstudio",
+                            "url": "https://dreamstudio.ai/",
+                            "favicon": ""
+                        }
+                    ]
+                },
+                {
+                    "id": 1692710573053,
+                    "name": "视频",
+                    "siteList": [
+                        {
+                            "id": 1692710577823,
+                            "name": "fliki",
+                            "url": "https://fliki.ai/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692710739725,
+                            "name": "Wonder",
+                            "url": "https://wonderdynamics.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1692710655773,
+                            "name": "BiLi GPT",
+                            "url": "https://b.jimmylv.cn/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692710767708,
+                            "name": "tavus",
+                            "url": "https://www.tavus.io/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692710803950,
+                            "name": "clipchamp",
+                            "url": "https://clipchamp.com/en/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692710852741,
+                            "name": "hourone",
+                            "url": "https://hourone.ai/",
+                            "favicon": ""
+                        }
+                    ]
+                },
+                {
+                    "id": 1692711056916,
+                    "name": "办公",
+                    "siteList": [
+                        {
+                            "id": 1692711064491,
+                            "name": "gamma",
+                            "url": "https://gamma.app/nb49hp25keqkliu/join?code=bzob65metz807x5",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692711076862,
+                            "name": "tome",
+                            "url": "https://tome.app/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692711114923,
+                            "name": "BeautifulAI",
+                            "url": "https://www.beautiful.ai/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692711154718,
+                            "name": "xmind",
+                            "url": "https://xmind.ai/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692711193083,
+                            "name": "chatdoc",
+                            "url": "https://chatdoc.com/",
+                            "favicon": ""
+                        },
+                        {
+                            "id": 1692711210757,
+                            "name": "resumaker",
+                            "url": "https://resumaker.ai/",
+                            "favicon": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "settings": {
+        "theme": "EarlySpring",
+        "search": "Bing",
+        "iconStyle": "Plain",
+        "siteStyle": "auto"
+    }
+}
