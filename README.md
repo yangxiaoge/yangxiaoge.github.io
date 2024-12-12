@@ -1,5 +1,6 @@
 
-## COME COME
+## 个人导航网页源码分支
+> 代码改自: https://github.com/hellojuantu/comecome
 
 ## 介绍
 [COME COME](https://comecome.cc) 是一款极简的网址导航工具，旨在为用户提供纯粹、简洁、高效的上网体验。
