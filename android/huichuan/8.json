@@ -1,0 +1,37 @@
+                {
+  "sid": 1223372036854776000,
+  "code": 0,
+  "slot_ad": [
+    {
+      "slot_id": 1231,
+      "ad": [
+        {
+          "ad_action": {
+            "action": "tab"
+          },
+          "ad_content": {
+            "rating_count": 1048,
+            "rating": 4.5,
+            "title": "皮皮助手皮皮助手",
+            "description": "这是一款十分注重用户体验",
+            "img_1": "http://pp.myapp.com/ma_icon/0/icon_10126331_1450408182/96"
+          },
+          "ad_id": 1566198,
+          "style": 8,
+          "furl": "http://www.failed_to_show.com",
+          "turl": [
+            "http://pro.25pp.com/pp_android?callback=%e6%88%91%e8%a2%ab%e7%bc%96%e7%a0%81%e8%bf%87%0a"
+          ],
+          "vurl": [
+            "http://huichuan.sm.cn/v?data=style1&stm={TS}",
+            "http://huichuan.sm.cn/v?data=style1_a&stm={TS}"
+          ],
+          "curl": [
+            "http://huichuan.sm.cn/c?data=style1&stm={TS}",
+            "http://huichuan.sm.cn/c?data=style1_a&stm={TS}"
+          ]
+        }
+      ]
+    }
+  ]
+}
