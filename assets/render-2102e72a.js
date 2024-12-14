@@ -1,0 +1,1 @@
+import{g as r}from"./commons-4d60aff1.js";import{c6 as t,y as s}from"./index-6a10d8e7.js";const u=t("render",()=>{const e=s(r());function o(){e.value=r()}return{siteGroupListKey:e,refreshSiteGroupList:o}});export{u};
