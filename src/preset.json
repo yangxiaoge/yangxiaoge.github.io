@@ -135,6 +135,13 @@
                     "name": "视频",
                     "siteList": [
                         {
+                            "id": 1692883920855,
+                            "name": "影视",
+                            "url": "https://yangxiaoge.github.io/yingshi/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
                             "id": 1692883885401,
                             "name": "B站",
                             "url": "https://www.bilibili.com/",
@@ -162,12 +169,6 @@
                             "id": 1692883838008,
                             "name": "爱奇艺",
                             "url": "https://www.iqiyi.com/",
-                            "favicon": ""
-                        },
-                        {
-                            "id": 1692883920855,
-                            "name": "芒果TV",
-                            "url": "https://www.mgtv.com/",
                             "favicon": ""
                         }
                     ]
@@ -681,20 +682,6 @@
                             "url": "http://192.168.10.128:8080/admin/repos",
                             "favicon": "http://192.168.10.128:8080/favicon.ico",
                             "bgColor": "#12572f"
-                        },
-                        {
-                            "id": 1733977653496,
-                            "name": "条码",
-                            "url": "https://sheepyang2022.github.io/createBarcodeWeb/",
-                            "favicon": "",
-                            "bgColor": ""
-                        },
-                        {
-                            "id": 1733977694401,
-                            "name": "隔空剪贴板",
-                            "url": "https://airclipbd.com/",
-                            "favicon": "",
-                            "bgColor": ""
                         }
                     ]
                 },
@@ -727,6 +714,13 @@
                             "id": 1733977554352,
                             "name": "时间戳",
                             "url": "https://tool.lu/timestamp/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1733977694401,
+                            "name": "隔空剪贴板",
+                            "url": "https://airclipbd.com/",
                             "favicon": "",
                             "bgColor": ""
                         },
@@ -768,6 +762,20 @@
                             "id": 1739927454881,
                             "name": "条码生成",
                             "url": "https://sheepyang2022.github.io/createBarcodeWeb/%E6%9D%A1%E7%A0%81%E7%94%9F%E6%88%90%E6%B5%8B%E8%AF%95.html",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1739927926228,
+                            "name": "图标",
+                            "url": "https://yangxiaoge.github.io/android/appicon-forge/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1739927960015,
+                            "name": "图标",
+                            "url": "https://yangxiaoge.github.io/android/android/",
                             "favicon": "",
                             "bgColor": ""
                         }
@@ -1195,7 +1203,8 @@
                             "id": 1692709180265,
                             "name": "DeepSeek",
                             "url": "https://chat.deepseek.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": ""
                         },
                         {
                             "id": 1692709257840,
