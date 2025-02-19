@@ -763,6 +763,13 @@
                             "url": "https://www.wanandroid.com/",
                             "favicon": "",
                             "bgColor": ""
+                        },
+                        {
+                            "id": 1739927454881,
+                            "name": "条码生成",
+                            "url": "https://sheepyang2022.github.io/createBarcodeWeb/%E6%9D%A1%E7%A0%81%E7%94%9F%E6%88%90%E6%B5%8B%E8%AF%95.html",
+                            "favicon": "",
+                            "bgColor": ""
                         }
                     ]
                 },
@@ -829,6 +836,33 @@
                             "id": 1733973435868,
                             "name": "合同示范文本库",
                             "url": "https://htsfwb.samr.gov.cn",
+                            "favicon": "",
+                            "bgColor": ""
+                        }
+                    ]
+                },
+                {
+                    "id": 1739927304541,
+                    "name": "科学",
+                    "siteList": [
+                        {
+                            "id": 1739927324480,
+                            "name": "爱快",
+                            "url": "http://192.168.31.1",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1739927347401,
+                            "name": "软路由",
+                            "url": "http://192.168.31.254",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1739927375778,
+                            "name": "科学看板",
+                            "url": "http://192.168.31.254:9090/ui/zashboard",
                             "favicon": "",
                             "bgColor": ""
                         }
