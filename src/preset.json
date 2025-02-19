@@ -1192,6 +1192,12 @@
                             "favicon": ""
                         },
                         {
+                            "id": 1692709180265,
+                            "name": "DeepSeek",
+                            "url": "https://chat.deepseek.com/",
+                            "favicon": ""
+                        },
+                        {
                             "id": 1692709257840,
                             "name": "通义千问",
                             "url": "https://tongyi.aliyun.com/qianwen/",
@@ -1213,12 +1219,6 @@
                             "id": 1692709225457,
                             "name": "腾讯元宝",
                             "url": "https://yuanbao.tencent.com/chat",
-                            "favicon": ""
-                        },
-                        {
-                            "id": 1692709180265,
-                            "name": "poe",
-                            "url": "https://poe.com/",
                             "favicon": ""
                         }
                     ]
