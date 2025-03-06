@@ -306,348 +306,6 @@
             ]
         },
         {
-            "id": 1695436323706,
-            "name": "生活",
-            "groupList": [
-                {
-                    "id": 1695436380605,
-                    "name": "出行",
-                    "siteList": [
-                        {
-                            "id": 1695436404182,
-                            "name": "飞猪旅行",
-                            "url": "https://www.fliggy.com/",
-                            "favicon": "https://g.alicdn.com/trip/tools/img/favicon.ico?20131130",
-                            "bgColor": ""
-                        },
-                        {
-                            "id": 1695436426033,
-                            "name": "中国铁路",
-                            "url": "https://www.12306.cn/index/",
-                            "favicon": "",
-                            "bgColor": ""
-                        },
-                        {
-                            "id": 1695436475258,
-                            "name": "携程旅行",
-                            "url": "https://www.ctrip.com/",
-                            "favicon": "",
-                            "bgColor": ""
-                        },
-                        {
-                            "id": 1695436491428,
-                            "name": "去哪儿",
-                            "url": "https://www.qunar.com/",
-                            "favicon": "",
-                            "bgColor": ""
-                        },
-                        {
-                            "id": 1695436508182,
-                            "name": "马蜂窝",
-                            "url": "https://www.mafengwo.cn/",
-                            "favicon": "",
-                            "bgColor": ""
-                        },
-                        {
-                            "id": 1695436618422,
-                            "name": "同程旅行",
-                            "url": "https://www.ly.com/",
-                            "favicon": "",
-                            "bgColor": ""
-                        }
-                    ]
-                },
-                {
-                    "id": 1695436632625,
-                    "name": "健康",
-                    "siteList": [
-                        {
-                            "id": 1695436661545,
-                            "name": "默沙东",
-                            "url": "https://www.msdmanuals.cn/",
-                            "favicon": "",
-                            "bgColor": ""
-                        },
-                        {
-                            "id": 1695436886632,
-                            "name": "丁香园",
-                            "url": "https://www.dxy.cn/",
-                            "favicon": "",
-                            "bgColor": ""
-                        },
-                        {
-                            "id": 1695436714070,
-                            "name": "用药助手",
-                            "url": "https://drugs.dxy.cn/pc",
-                            "favicon": "",
-                            "bgColor": ""
-                        },
-                        {
-                            "id": 1695436750660,
-                            "name": "药品查询",
-                            "url": "https://www.nmpa.gov.cn/datasearch/",
-                            "favicon": "https://www.nmpa.gov.cn/wbppimages/favicon.ico",
-                            "bgColor": "#6c9805"
-                        },
-                        {
-                            "id": 1695436840054,
-                            "name": "Cochrane",
-                            "url": "https://www.cochrane.org/zh-hans/evidence",
-                            "favicon": "",
-                            "bgColor": ""
-                        },
-                        {
-                            "id": 1695436684899,
-                            "name": "丁香医生",
-                            "url": "https://dxy.com/",
-                            "favicon": "",
-                            "bgColor": ""
-                        }
-                    ]
-                },
-                {
-                    "id": 1695436914659,
-                    "name": "便民",
-                    "siteList": [
-                        {
-                            "id": 1695437798714,
-                            "name": "便民查询",
-                            "url": "https://www.bmcx.com/",
-                            "favicon": "",
-                            "bgColor": ""
-                        },
-                        {
-                            "id": 1695436941204,
-                            "name": "天气预报",
-                            "url": "https://www.windy.com/",
-                            "favicon": "",
-                            "bgColor": ""
-                        },
-                        {
-                            "id": 1695436995851,
-                            "name": "百度地图",
-                            "url": "https://map.baidu.com/",
-                            "favicon": "",
-                            "bgColor": ""
-                        },
-                        {
-                            "id": 1695437162230,
-                            "name": "查快递",
-                            "url": "https://www.kuaidi100.com/",
-                            "favicon": "",
-                            "bgColor": ""
-                        },
-                        {
-                            "id": 1695437057787,
-                            "name": "万年历",
-                            "url": "https://www.wnl.cc/",
-                            "favicon": "",
-                            "bgColor": ""
-                        },
-                        {
-                            "id": 1695437615691,
-                            "name": "宝贝回家",
-                            "url": "https://baobeihuijia.com/bbhj/",
-                            "favicon": "https://baobeihuijia.com/bbhj/assets/images/favicon.png",
-                            "bgColor": "#8b404a"
-                        }
-                    ]
-                },
-                {
-                    "id": 1695439322419,
-                    "name": "菜谱",
-                    "siteList": [
-                        {
-                            "id": 1695439377856,
-                            "name": "美食天下",
-                            "url": "https://www.meishichina.com/",
-                            "favicon": "https://static.meishichina.com/a1/img/fav.ico",
-                            "bgColor": ""
-                        },
-                        {
-                            "id": 1695439434112,
-                            "name": "豆果美食",
-                            "url": "https://www.douguo.com/",
-                            "favicon": "",
-                            "bgColor": ""
-                        },
-                        {
-                            "id": 1695439450663,
-                            "name": "食谱秀",
-                            "url": "https://www.shipuxiu.com/",
-                            "favicon": "",
-                            "bgColor": "#36b736"
-                        },
-                        {
-                            "id": 1695439485403,
-                            "name": "美食杰",
-                            "url": "https://www.meishij.net/",
-                            "favicon": "",
-                            "bgColor": ""
-                        },
-                        {
-                            "id": 1695439509103,
-                            "name": "下厨房",
-                            "url": "https://www.xiachufang.com/",
-                            "favicon": "",
-                            "bgColor": ""
-                        },
-                        {
-                            "id": 1695439664846,
-                            "name": "食谱",
-                            "url": "https://cook.yhz610.com/",
-                            "favicon": "https://cook.yhz610.com/favicon.svg",
-                            "bgColor": "#2f0137"
-                        }
-                    ]
-                },
-                {
-                    "id": 1695439118723,
-                    "name": "工作",
-                    "siteList": [
-                        {
-                            "id": 1695439146750,
-                            "name": "Boss直聘",
-                            "url": "https://www.zhipin.com/",
-                            "favicon": "",
-                            "bgColor": ""
-                        },
-                        {
-                            "id": 1695439210766,
-                            "name": "领英",
-                            "url": "https://www.linkedin.com/",
-                            "favicon": "",
-                            "bgColor": ""
-                        },
-                        {
-                            "id": 1695439190291,
-                            "name": "拉勾网",
-                            "url": "https://www.lagou.com/",
-                            "favicon": "",
-                            "bgColor": ""
-                        },
-                        {
-                            "id": 1695439169220,
-                            "name": "前程无忧",
-                            "url": "https://www.51job.com/",
-                            "favicon": "",
-                            "bgColor": ""
-                        },
-                        {
-                            "id": 1695439231678,
-                            "name": "中华英才",
-                            "url": "https://www.chinahr.com/",
-                            "favicon": "",
-                            "bgColor": "#09083b"
-                        },
-                        {
-                            "id": 1695439261035,
-                            "name": "猎聘",
-                            "url": "https://www.liepin.com/",
-                            "favicon": "",
-                            "bgColor": "#1e763f"
-                        }
-                    ]
-                },
-                {
-                    "id": 1695437820622,
-                    "name": "银行",
-                    "siteList": [
-                        {
-                            "id": 1695437857696,
-                            "name": "兴业银行",
-                            "url": "https://www.cib.com.cn/",
-                            "favicon": "https://www.cib.com.cn/favicon.ico",
-                            "bgColor": ""
-                        },
-                        {
-                            "id": 1695438027168,
-                            "name": "中信银行",
-                            "url": "https://www.citicbank.com/",
-                            "favicon": "https://www.citicbank.com/images/share_logo1.jpg",
-                            "bgColor": "#3e69a9"
-                        },
-                        {
-                            "id": 1695438198778,
-                            "name": "平安银行",
-                            "url": "https://bank.pingan.com/",
-                            "favicon": "",
-                            "bgColor": ""
-                        },
-                        {
-                            "id": 1695438260272,
-                            "name": "民生银行",
-                            "url": "https://www.cmbc.com.cn/",
-                            "favicon": "https://cdn.yhz610.com/navpwa/cmbc.png",
-                            "bgColor": "#0b047e"
-                        },
-                        {
-                            "id": 1695438313422,
-                            "name": "光大银行",
-                            "url": "https://www.cebbank.com/",
-                            "favicon": "https://cdn.yhz610.com/navpwa/cebbank.png",
-                            "bgColor": "#6c9805"
-                        },
-                        {
-                            "id": 1695438337215,
-                            "name": "浦发银行",
-                            "url": "https://www.spdb.com.cn/",
-                            "favicon": "https://www.spdb.com.cn/images/favicon.ico",
-                            "bgColor": "#497321"
-                        }
-                    ]
-                },
-                {
-                    "id": 1695439872715,
-                    "name": "其他",
-                    "siteList": [
-                        {
-                            "id": 1695439907630,
-                            "name": "央视频道",
-                            "url": "https://tv.cctv.com/live/",
-                            "favicon": "",
-                            "bgColor": ""
-                        },
-                        {
-                            "id": 1695440085275,
-                            "name": "中国体彩",
-                            "url": "https://www.lottery.gov.cn/",
-                            "favicon": "",
-                            "bgColor": ""
-                        },
-                        {
-                            "id": 1695440119945,
-                            "name": "汽车之家",
-                            "url": "https://www.autohome.com.cn/",
-                            "favicon": "",
-                            "bgColor": ""
-                        },
-                        {
-                            "id": 1695440153445,
-                            "name": "东方财富",
-                            "url": "https://www.eastmoney.com/",
-                            "favicon": "",
-                            "bgColor": ""
-                        },
-                        {
-                            "id": 1695440182419,
-                            "name": "天天基金",
-                            "url": "https://fund.eastmoney.com/",
-                            "favicon": "",
-                            "bgColor": ""
-                        },
-                        {
-                            "id": 1695440391003,
-                            "name": "在线电台",
-                            "url": "https://www.diantaiwang.com/",
-                            "favicon": "",
-                            "bgColor": ""
-                        }
-                    ]
-                }
-            ]
-        },
-        {
             "id": 1733971728961,
             "name": "办公",
             "groupList": [
@@ -682,6 +340,54 @@
                             "url": "http://192.168.10.128:8080/admin/repos",
                             "favicon": "http://192.168.10.128:8080/favicon.ico",
                             "bgColor": "#12572f"
+                        }
+                    ]
+                },
+                {
+                    "id": 1739927304541,
+                    "name": "科学",
+                    "siteList": [
+                        {
+                            "id": 1739927324480,
+                            "name": "爱快",
+                            "url": "http://192.168.31.1",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1739927347401,
+                            "name": "软路由",
+                            "url": "http://192.168.31.254",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1739927375778,
+                            "name": "科学看板",
+                            "url": "http://192.168.31.254:9090/ui/zashboard",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1741225900634,
+                            "name": "网飞测速",
+                            "url": "https://fast.com",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1741225929091,
+                            "name": "电信测速",
+                            "url": "http://speedtest.jsinfo.net/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1741225952445,
+                            "name": "南大测速",
+                            "url": "https://test.nju.edu.cn/",
+                            "favicon": "",
+                            "bgColor": ""
                         }
                     ]
                 },
@@ -844,33 +550,6 @@
                             "id": 1733973435868,
                             "name": "合同示范文本库",
                             "url": "https://htsfwb.samr.gov.cn",
-                            "favicon": "",
-                            "bgColor": ""
-                        }
-                    ]
-                },
-                {
-                    "id": 1739927304541,
-                    "name": "科学",
-                    "siteList": [
-                        {
-                            "id": 1739927324480,
-                            "name": "爱快",
-                            "url": "http://192.168.31.1",
-                            "favicon": "",
-                            "bgColor": ""
-                        },
-                        {
-                            "id": 1739927347401,
-                            "name": "软路由",
-                            "url": "http://192.168.31.254",
-                            "favicon": "",
-                            "bgColor": ""
-                        },
-                        {
-                            "id": 1739927375778,
-                            "name": "科学看板",
-                            "url": "http://192.168.31.254:9090/ui/zashboard",
                             "favicon": "",
                             "bgColor": ""
                         }
@@ -1442,6 +1121,348 @@
                             "name": "resumaker",
                             "url": "https://resumaker.ai/",
                             "favicon": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1695436323706,
+            "name": "生活",
+            "groupList": [
+                {
+                    "id": 1695436380605,
+                    "name": "出行",
+                    "siteList": [
+                        {
+                            "id": 1695436404182,
+                            "name": "飞猪旅行",
+                            "url": "https://www.fliggy.com/",
+                            "favicon": "https://g.alicdn.com/trip/tools/img/favicon.ico?20131130",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695436426033,
+                            "name": "中国铁路",
+                            "url": "https://www.12306.cn/index/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695436475258,
+                            "name": "携程旅行",
+                            "url": "https://www.ctrip.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695436491428,
+                            "name": "去哪儿",
+                            "url": "https://www.qunar.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695436508182,
+                            "name": "马蜂窝",
+                            "url": "https://www.mafengwo.cn/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695436618422,
+                            "name": "同程旅行",
+                            "url": "https://www.ly.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        }
+                    ]
+                },
+                {
+                    "id": 1695436632625,
+                    "name": "健康",
+                    "siteList": [
+                        {
+                            "id": 1695436661545,
+                            "name": "默沙东",
+                            "url": "https://www.msdmanuals.cn/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695436886632,
+                            "name": "丁香园",
+                            "url": "https://www.dxy.cn/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695436714070,
+                            "name": "用药助手",
+                            "url": "https://drugs.dxy.cn/pc",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695436750660,
+                            "name": "药品查询",
+                            "url": "https://www.nmpa.gov.cn/datasearch/",
+                            "favicon": "https://www.nmpa.gov.cn/wbppimages/favicon.ico",
+                            "bgColor": "#6c9805"
+                        },
+                        {
+                            "id": 1695436840054,
+                            "name": "Cochrane",
+                            "url": "https://www.cochrane.org/zh-hans/evidence",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695436684899,
+                            "name": "丁香医生",
+                            "url": "https://dxy.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        }
+                    ]
+                },
+                {
+                    "id": 1695436914659,
+                    "name": "便民",
+                    "siteList": [
+                        {
+                            "id": 1695437798714,
+                            "name": "便民查询",
+                            "url": "https://www.bmcx.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695436941204,
+                            "name": "天气预报",
+                            "url": "https://www.windy.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695436995851,
+                            "name": "百度地图",
+                            "url": "https://map.baidu.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695437162230,
+                            "name": "查快递",
+                            "url": "https://www.kuaidi100.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695437057787,
+                            "name": "万年历",
+                            "url": "https://www.wnl.cc/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695437615691,
+                            "name": "宝贝回家",
+                            "url": "https://baobeihuijia.com/bbhj/",
+                            "favicon": "https://baobeihuijia.com/bbhj/assets/images/favicon.png",
+                            "bgColor": "#8b404a"
+                        }
+                    ]
+                },
+                {
+                    "id": 1695439322419,
+                    "name": "菜谱",
+                    "siteList": [
+                        {
+                            "id": 1695439377856,
+                            "name": "美食天下",
+                            "url": "https://www.meishichina.com/",
+                            "favicon": "https://static.meishichina.com/a1/img/fav.ico",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695439434112,
+                            "name": "豆果美食",
+                            "url": "https://www.douguo.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695439450663,
+                            "name": "食谱秀",
+                            "url": "https://www.shipuxiu.com/",
+                            "favicon": "",
+                            "bgColor": "#36b736"
+                        },
+                        {
+                            "id": 1695439485403,
+                            "name": "美食杰",
+                            "url": "https://www.meishij.net/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695439509103,
+                            "name": "下厨房",
+                            "url": "https://www.xiachufang.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695439664846,
+                            "name": "食谱",
+                            "url": "https://cook.yhz610.com/",
+                            "favicon": "https://cook.yhz610.com/favicon.svg",
+                            "bgColor": "#2f0137"
+                        }
+                    ]
+                },
+                {
+                    "id": 1695439118723,
+                    "name": "工作",
+                    "siteList": [
+                        {
+                            "id": 1695439146750,
+                            "name": "Boss直聘",
+                            "url": "https://www.zhipin.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695439210766,
+                            "name": "领英",
+                            "url": "https://www.linkedin.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695439190291,
+                            "name": "拉勾网",
+                            "url": "https://www.lagou.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695439169220,
+                            "name": "前程无忧",
+                            "url": "https://www.51job.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695439231678,
+                            "name": "中华英才",
+                            "url": "https://www.chinahr.com/",
+                            "favicon": "",
+                            "bgColor": "#09083b"
+                        },
+                        {
+                            "id": 1695439261035,
+                            "name": "猎聘",
+                            "url": "https://www.liepin.com/",
+                            "favicon": "",
+                            "bgColor": "#1e763f"
+                        }
+                    ]
+                },
+                {
+                    "id": 1695437820622,
+                    "name": "银行",
+                    "siteList": [
+                        {
+                            "id": 1695437857696,
+                            "name": "兴业银行",
+                            "url": "https://www.cib.com.cn/",
+                            "favicon": "https://www.cib.com.cn/favicon.ico",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695438027168,
+                            "name": "中信银行",
+                            "url": "https://www.citicbank.com/",
+                            "favicon": "https://www.citicbank.com/images/share_logo1.jpg",
+                            "bgColor": "#3e69a9"
+                        },
+                        {
+                            "id": 1695438198778,
+                            "name": "平安银行",
+                            "url": "https://bank.pingan.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695438260272,
+                            "name": "民生银行",
+                            "url": "https://www.cmbc.com.cn/",
+                            "favicon": "https://cdn.yhz610.com/navpwa/cmbc.png",
+                            "bgColor": "#0b047e"
+                        },
+                        {
+                            "id": 1695438313422,
+                            "name": "光大银行",
+                            "url": "https://www.cebbank.com/",
+                            "favicon": "https://cdn.yhz610.com/navpwa/cebbank.png",
+                            "bgColor": "#6c9805"
+                        },
+                        {
+                            "id": 1695438337215,
+                            "name": "浦发银行",
+                            "url": "https://www.spdb.com.cn/",
+                            "favicon": "https://www.spdb.com.cn/images/favicon.ico",
+                            "bgColor": "#497321"
+                        }
+                    ]
+                },
+                {
+                    "id": 1695439872715,
+                    "name": "其他",
+                    "siteList": [
+                        {
+                            "id": 1695439907630,
+                            "name": "央视频道",
+                            "url": "https://tv.cctv.com/live/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695440085275,
+                            "name": "中国体彩",
+                            "url": "https://www.lottery.gov.cn/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695440119945,
+                            "name": "汽车之家",
+                            "url": "https://www.autohome.com.cn/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695440153445,
+                            "name": "东方财富",
+                            "url": "https://www.eastmoney.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695440182419,
+                            "name": "天天基金",
+                            "url": "https://fund.eastmoney.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1695440391003,
+                            "name": "在线电台",
+                            "url": "https://www.diantaiwang.com/",
+                            "favicon": "",
+                            "bgColor": ""
                         }
                     ]
                 }
