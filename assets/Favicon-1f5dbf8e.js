@@ -1,0 +1,1 @@
+import{_ as o}from"./Favicon.vue_vue_type_script_setup_true_lang-d2f9d6aa.js";import"./commons-4d60aff1.js";import"./index-22306c45.js";import"./site-c5e963f8.js";import"./icon_style-52a68af3.js";export{o as default};
