@@ -15,6 +15,13 @@
                             "favicon": ""
                         },
                         {
+                            "id": 1692883452618,
+                            "name": "热榜",
+                            "url": "https://rebang.today/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
                             "id": 1692883335754,
                             "name": "知乎",
                             "url": "https://www.zhihu.com/",
@@ -30,12 +37,6 @@
                             "id": 1692883369946,
                             "name": "豆瓣",
                             "url": "https://www.douban.com/",
-                            "favicon": ""
-                        },
-                        {
-                            "id": 1692883452618,
-                            "name": "简书",
-                            "url": "https://www.jianshu.com/",
                             "favicon": ""
                         },
                         {
