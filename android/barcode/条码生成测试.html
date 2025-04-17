@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)http://192.168.41.216/%E6%9D%A1%E7%A0%81%E7%94%9F%E6%88%90/ -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--<link rel="icon" href="favicon.ico">-->
+
+    <script src="./条码生成测试_files/jquery-1.7.2.min.js.下载"></script>
+    <script src="./条码生成测试_files/createbarcode.js.下载"></script>
+    <script src="./条码生成测试_files/JsBarcode.all.js.下载"></script>
+    <script src="./条码生成测试_files/qrcode.js.下载"></script>
+    <script src="./条码生成测试_files/jQueryRotate.2.2.js.下载"></script>
+    <link href="./条码生成测试_files/my.css" rel="stylesheet" type="text/css">
+    <title>条码生成测试</title>
+</head>
+
+<body style="height: 700px">
+    <div class="dialoge" id="tang" style="height: 100%;width: 100%;display: none;">
+        <div class="dialoge">
+            <div class="content" style="height: 180px">
+                <!--            请等待30秒左右!-->
+                <div style="text-align: center;line-height: 3rem;height: 20%;width: 100%;">
+                    请稍等 ! 加载成功会自动刷新页面<br>
+                    大约1分钟左右 ! <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div align="center" id="set">
+        <span>条码类型</span><select id="Code" onchange="selectchange()" style="width: 90px;">
+            <option value="CODE128">CODE128</option>
+            <option value="CODE39">CODE39</option>
+            <option value="QRCode">QRCode</option>
+        </select>&nbsp;&nbsp;
+        <button id="anniu" onclick="anniu()">生成50条正式数据</button>
+        <br>
+        <span id="tmkd">条码线宽</span><input id="WidthCode" style="width: 80px;" type="number" value="2">
+        <span>条码高度</span><input id="HeightCode" style="width: 80px;" type="number" value="120"><br>
+        <span>线条颜色</span><input id="LineColorCode" style="width: 80px;" type="color" value="#000000">
+        <span>背景颜色</span><input id="BackgroundColorCode" style="width: 80px;" type="color" value="#ffffff"><br>
+        <br>
+        <span>条码前缀</span><input id="uScanData" style="width: 175px;" type="text" value="LH"><br>
+        <form action="http://192.168.41.216/%E6%9D%A1%E7%A0%81%E7%94%9F%E6%88%90/">
+            <input checked="" name="fanshi" type="radio" value="youxu">
+            <span>开始数值</span><input id="iScanData1" style="width: 100px;" type="text" value="1222183401">
+            <span>每次自增</span><input id="RandNum1" style="width: 50px;" type="number" value="1"><br>
+            <input name="fanshi" type="radio" value="wuxu">
+            <span>随机数据</span><input id="iScanData" style="width: 100px;" type="text" value="0123456789">
+            <span>随机位数</span><input id="RandNum" style="width: 50px;" type="number" value="6">
+        </form>
+        <span>条码后缀</span><input id="dScanData" style="width: 175px;" type="text"><br>
+        <br>
+        <span>矩阵</span><select id="MatrixData" style="width: 65px;">
+            <option value="1*1">1*1</option>
+            <option selected="" value="3*1">3*1</option>
+            <option value="5*1">5*1</option>
+            <option value="5*5">5*5</option>
+            <!--    <option value="6*6">6*6</option>-->
+        </select>
+        <span>旋转</span><select id="IsRotate" style="width: 65px;">
+            <option value="是">是</option>
+            <option value="否">否</option>
+        </select>
+        <span>间隔</span><input id="TimeIn" style="width: 65px;" type="number" value="2000"><br><br>
+        <a href="./index.html"
+            style="color: red;font-size:30px;margin-left: 10px;text-decoration:none;">⬅️返回旧页面</a><br /><br />
+    </div>
+    <div align="center">
+        <input id="start" onclick="start()" type="submit" value="开始">
+        <input id="hide" onclick="hide()" type="submit" value="收缩">
+        <input id="create" onclick="create()" type="submit" value="矩阵">
+    </div>
+    <hr>
+    <br>
+    <div align="center" id="qrcode">
+        1、支持条码类型：Code 128、Code39、QRCode；<br>
+        2、条码线宽：指一维条码的最细线条的线宽，最小值为1；<br>
+        3、条码宽度：指二维条码的宽度；<br>
+        4、条码高度：指条码的高度；<br>
+        5、刷新间隔：指两次条码生成的时间间隔(单位：ms)；<br>
+        6、条码数据=条码前缀+动态数据（注释1）+条码后缀；<br>
+        7、是否旋转：选择是则生成的条码会随机角度的旋转展示。<br><br>
+
+        注释1：动态数据：指在[随机数据]中取[随机位数]后的数据，例如：随机数据=123ABC，随机位数=3；
+        此时的动态数据=1AB或23C或331等（从随机数据中抽取3位做为随动态数据，且抽取的数据可以重复）。
+    </div>
+    <div id="qrcode1" style="display: none">
+        <br><br><br>
+        <div align="center" id="1d">
+            <img id="barcode">
+        </div>
+        <div align="center" id="jz1d">
+            <img id="s1">&nbsp;&nbsp;&nbsp;<img id="s2">&nbsp;&nbsp;&nbsp;<img id="s3">&nbsp;&nbsp;&nbsp;<img
+                id="s4">&nbsp;&nbsp;&nbsp;<img id="s5">
+            <br>
+            <img id="s6">&nbsp;&nbsp;&nbsp;<img id="s7">&nbsp;&nbsp;&nbsp;<img id="s8">&nbsp;&nbsp;&nbsp;<img
+                id="s9">&nbsp;&nbsp;&nbsp;<img id="s10">
+            <br>
+            <img id="s11">&nbsp;&nbsp;&nbsp;<img id="s12">&nbsp;&nbsp;&nbsp;<img id="s13">&nbsp;&nbsp;&nbsp;<img
+                id="s14">&nbsp;&nbsp;&nbsp;<img id="s15">
+            <br>
+            <img id="s16">&nbsp;&nbsp;&nbsp;<img id="s17">&nbsp;&nbsp;&nbsp;<img id="s18">&nbsp;&nbsp;&nbsp;<img
+                id="s19">&nbsp;&nbsp;&nbsp;<img id="s20">
+            <br>
+            <img id="s21">&nbsp;&nbsp;&nbsp;<img id="s22">&nbsp;&nbsp;&nbsp;<img id="s23">&nbsp;&nbsp;&nbsp;<img
+                id="s24">&nbsp;&nbsp;&nbsp;<img id="s25">
+            <br><br><br>
+            <!--        <img id="s26"/>&nbsp;&nbsp;&nbsp;<img id="s27"/>&nbsp;&nbsp;&nbsp;<img id="s28"/>&nbsp;&nbsp;&nbsp;<img id="s29"/>&nbsp;&nbsp;&nbsp;<img id="s30"/>-->
+            <!--        <img id="s31"/>&nbsp;&nbsp;&nbsp;<img id="s32"/>&nbsp;&nbsp;&nbsp;<img id="s33"/>&nbsp;&nbsp;&nbsp;<img id="s34"/>&nbsp;&nbsp;&nbsp;<img id="s35"/>&nbsp;&nbsp;&nbsp;<img id="s36"/>-->
+            <!--        <br/>-->
+            <!--        <img id="s37"/>&nbsp;&nbsp;&nbsp;<img id="s38"/>&nbsp;&nbsp;&nbsp;<img id="s39"/>&nbsp;&nbsp;&nbsp;<img id="s40"/>&nbsp;&nbsp;&nbsp;<img id="s41"/>&nbsp;&nbsp;&nbsp;<img id="s42"/>-->
+            <!--        <br/>-->
+            <!--        <img id="s43"/>&nbsp;&nbsp;&nbsp;<img id="s44"/>&nbsp;&nbsp;&nbsp;<img id="s45"/>&nbsp;&nbsp;&nbsp;<img id="s46"/>&nbsp;&nbsp;&nbsp;<img id="s47"/>&nbsp;&nbsp;&nbsp;<img id="s48"/>-->
+            <!--        <br/>-->
+            <!--        <img id="s49"/>&nbsp;&nbsp;&nbsp;<img id="s50"/>&nbsp;&nbsp;&nbsp;<img id="s51"/>&nbsp;&nbsp;&nbsp;<img id="s52"/>&nbsp;&nbsp;&nbsp;<img id="s53"/>&nbsp;&nbsp;&nbsp;<img id="s54"/>-->
+            <!--        <br/>-->
+            <!--        <img id="s55"/>&nbsp;&nbsp;&nbsp;<img id="s56"/>&nbsp;&nbsp;&nbsp;<img id="s57"/>&nbsp;&nbsp;&nbsp;<img id="s58"/>&nbsp;&nbsp;&nbsp;<img id="s59"/>&nbsp;&nbsp;&nbsp;<img id="s60"/>-->
+        </div>
+    </div>
+
+
+    <div id="__FEISHU_CLIPPER__"></div><deepl-input-controller><template shadowrootmode="open">
+            <link rel="stylesheet" href="chrome-extension://fancfknaplihpclbhbpclnmmjcjanbaf/build/content.css">
+            <div>
+                <div class="dl-input-translation-container svelte-ju4595">
+                    <div></div>
+                </div>
+            </div>
+        </template></deepl-input-controller>
+</body>
+
+</html>

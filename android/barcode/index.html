@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes"
+        charset="UTF-8" />
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/createbarcode.js"></script>
+    <script src="js/JsBarcode.all.js"></script>
+    <script src="js/qrcode.js"></script>
+    <script src="js/jQueryRotate.2.2.js"></script>
+    <title>条码生成测试</title>
+</head>
+
+<body>
+    <div align="center" id="set">
+        <span>条码类型</span><select style="width: 179px;" id="Code" onchange="selectchange()">
+            <option value="CODE128">CODE128</option>
+            <option value="CODE39">CODE39</option>
+            <option value="QRCode">QRCode</option>
+        </select><br />
+        <span id="tmkd">条码线宽</span><input type="number" style="width: 175px;" id="WidthCode" value="2"><br />
+        <span>条码高度</span><input type="number" style="width: 175px;" id="HeightCode" value="120"><br />
+        <span>线条颜色</span><input type="color" style="width: 175px;" id="LineColorCode" value="#000000"><br />
+        <span>背景颜色</span><input type="color" style="width: 175px;" id="BackgroundColorCode" value="#ffffff"><br />
+        <span>条码前缀</span><input type="text" style="width: 175px;" id="uScanData"><br />
+        <span>随机数据</span><input type="text" style="width: 175px;" id="iScanData"><br />
+        <span>随机位数</span><input type="number" style="width: 175px;" id="RandNum" value="3"><br />
+        <span>条码后缀</span><input type="text" style="width: 175px;" id="dScanData"><br />
+        <span>矩阵选择</span><select style="width: 179px;" id="MatrixData">
+            <option value="3*1">3*1</option>
+            <option value="3*5">3*5</option>
+            <option value="3*10">3*10</option>
+            <option value="3*20">3*20</option>
+        </select><br />
+        <span>是否旋转</span><select style="width: 179px;" id="IsRotate">
+            <option value="否">否</option>
+            <option value="是">是</option>
+        </select><br />
+        <span>刷新间隔</span><input type="number" style="width: 175px;" id="TimeIn" value="2000"><br /><br />
+        <a href="./条码生成测试.html"
+            style="color: red;font-size:30px;margin-left: 10px;text-decoration:none;">跳转新页面➡️</a><br /><br />
+
+    </div>
+    <div align="center">
+        <input type="submit" id="start" value="开始" onclick="start()">
+        <input type="submit" id="hide" value="收缩" onclick="hide()">
+        <input type="submit" id="create" value="矩阵" onclick="create()">
+        <!-- <a href="./条码生成测试.html" style="color: red;font-size:30px;margin-left: 10px;">跳转新页面</a> -->
+    </div>
+    <hr /><br /><br />
+    <div align="center" id="1d">
+        <img id="barcode" />
+    </div>
+    <div align="center" id="qrcode">
+        1、支持条码类型：Code 128、Code39、QRCode；<br />
+        2、条码线宽：指一维条码的最细线条的线宽，最小值为1；<br />
+        3、条码宽度：指二维条码的宽度；<br />
+        4、条码高度：指条码的高度；<br />
+        5、刷新间隔：指两次条码生成的时间间隔(单位：ms)；<br />
+        6、条码数据=条码前缀+动态数据（注释1）+条码后缀；<br />
+        7、是否旋转：选择是则生成的条码会随机角度的旋转展示。<br /><br />
+
+        注释1：动态数据：指在[随机数据]中取[随机位数]后的数据，例如：随机数据=123ABC，随机位数=3；
+        此时的动态数据=1AB或23C或331等（从随机数据中抽取3位做为随动态数据，且抽取的数据可以重复）。
+    </div>
+    <div align="center" id="jz1d">
+        <img id="s1" />&nbsp;&nbsp;&nbsp;<img id="s2" />&nbsp;&nbsp;&nbsp;<img id="s3" /><br />
+        <img id="s4" />&nbsp;&nbsp;&nbsp;<img id="s5" />&nbsp;&nbsp;&nbsp;<img id="s6" /><br />
+        <img id="s7" />&nbsp;&nbsp;&nbsp;<img id="s8" />&nbsp;&nbsp;&nbsp;<img id="s9" /><br />
+        <img id="s10" />&nbsp;&nbsp;&nbsp;<img id="s11" />&nbsp;&nbsp;&nbsp;<img id="s12" /><br />
+        <img id="s13" />&nbsp;&nbsp;&nbsp;<img id="s14" />&nbsp;&nbsp;&nbsp;<img id="s15" /><br />
+        <img id="s16" />&nbsp;&nbsp;&nbsp;<img id="s17" />&nbsp;&nbsp;&nbsp;<img id="s18" /><br />
+        <img id="s19" />&nbsp;&nbsp;&nbsp;<img id="s20" />&nbsp;&nbsp;&nbsp;<img id="s21" /><br />
+        <img id="s22" />&nbsp;&nbsp;&nbsp;<img id="s23" />&nbsp;&nbsp;&nbsp;<img id="s24" /><br />
+        <img id="s25" />&nbsp;&nbsp;&nbsp;<img id="s26" />&nbsp;&nbsp;&nbsp;<img id="s27" /><br />
+        <img id="s28" />&nbsp;&nbsp;&nbsp;<img id="s29" />&nbsp;&nbsp;&nbsp;<img id="s30" /><br />
+        <img id="s31" />&nbsp;&nbsp;&nbsp;<img id="s32" />&nbsp;&nbsp;&nbsp;<img id="s33" /><br />
+        <img id="s34" />&nbsp;&nbsp;&nbsp;<img id="s35" />&nbsp;&nbsp;&nbsp;<img id="s36" /><br />
+        <img id="s37" />&nbsp;&nbsp;&nbsp;<img id="s38" />&nbsp;&nbsp;&nbsp;<img id="s39" /><br />
+        <img id="s40" />&nbsp;&nbsp;&nbsp;<img id="s41" />&nbsp;&nbsp;&nbsp;<img id="s42" /><br />
+        <img id="s43" />&nbsp;&nbsp;&nbsp;<img id="s44" />&nbsp;&nbsp;&nbsp;<img id="s45" /><br />
+        <img id="s46" />&nbsp;&nbsp;&nbsp;<img id="s47" />&nbsp;&nbsp;&nbsp;<img id="s48" /><br />
+        <img id="s49" />&nbsp;&nbsp;&nbsp;<img id="s50" />&nbsp;&nbsp;&nbsp;<img id="s51" /><br />
+        <img id="s52" />&nbsp;&nbsp;&nbsp;<img id="s53" />&nbsp;&nbsp;&nbsp;<img id="s54" /><br />
+        <img id="s55" />&nbsp;&nbsp;&nbsp;<img id="s56" />&nbsp;&nbsp;&nbsp;<img id="s57" /><br />
+        <img id="s58" />&nbsp;&nbsp;&nbsp;<img id="s59" />&nbsp;&nbsp;&nbsp;<img id="s60" /><br />
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+.dialoge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 20rem;
+    height: 20rem;
+    margin: auto;
+}
+.content {
+    background: #C8E6C9;
+    text-align: center;
+    line-height: 10rem;
+    border-radius: 1rem;
+}
