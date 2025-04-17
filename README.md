@@ -14,3 +14,6 @@ https://yangxiaoge.github.io/android/appicon-forge
 
 # imsyy主页
 https://yangxiaoge.github.io/imsyy/
+
+# 条码生成测试
+https://yangxiaoge.github.io/barcode/
