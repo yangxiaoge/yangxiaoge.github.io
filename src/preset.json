@@ -346,7 +346,7 @@
                 },
                 {
                     "id": 1739927304541,
-                    "name": "科学",
+                    "name": "个人路由",
                     "siteList": [
                         {
                             "id": 1739927324480,
@@ -365,7 +365,7 @@
                         {
                             "id": 1739927375778,
                             "name": "科学看板",
-                            "url": "http://192.168.31.254:9090/ui/zashboard",
+                            "url": "http://192.168.31.254:9090/ui/metacubexd/",
                             "favicon": "",
                             "bgColor": ""
                         },
@@ -387,6 +387,33 @@
                             "id": 1741225952445,
                             "name": "南大测速",
                             "url": "https://test.nju.edu.cn/",
+                            "favicon": "",
+                            "bgColor": ""
+                        }
+                    ]
+                },
+                {
+                    "id": 1745462984322,
+                    "name": "应用组路由",
+                    "siteList": [
+                        {
+                            "id": 1745463008196,
+                            "name": "AP管理",
+                            "url": "http://192.168.31.103/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1745463023760,
+                            "name": "软路由",
+                            "url": "http://192.168.31.3/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1745463042728,
+                            "name": "科学看板",
+                            "url": "http://192.168.31.3:9090/ui/metacubexd/",
                             "favicon": "",
                             "bgColor": ""
                         }
@@ -893,6 +920,12 @@
                             "favicon": ""
                         },
                         {
+                            "id": 1692709225457,
+                            "name": "腾讯元宝",
+                            "url": "https://yuanbao.tencent.com/chat",
+                            "favicon": ""
+                        },
+                        {
                             "id": 1692709291217,
                             "name": "文心一言",
                             "url": "https://yiyan.baidu.com/",
@@ -902,12 +935,6 @@
                             "id": 1692709314169,
                             "name": "讯飞星火",
                             "url": "https://xinghuo.xfyun.cn/desk?ch=xhweb_ril",
-                            "favicon": ""
-                        },
-                        {
-                            "id": 1692709225457,
-                            "name": "腾讯元宝",
-                            "url": "https://yuanbao.tencent.com/chat",
                             "favicon": ""
                         }
                     ]
