@@ -491,6 +491,20 @@
                             "url": "https://ywyj.cn",
                             "favicon": "",
                             "bgColor": ""
+                        },
+                        {
+                            "id": 1747796254994,
+                            "name": "打字",
+                            "url": "https://www.keybr.com/",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1747796273580,
+                            "name": "打字",
+                            "url": "https://qwerty.kaiyi.cool/",
+                            "favicon": "",
+                            "bgColor": ""
                         }
                     ]
                 },
