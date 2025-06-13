@@ -948,27 +948,28 @@
                             "bgColor": ""
                         },
                         {
-                            "id": 1692709257840,
-                            "name": "通义千问",
-                            "url": "https://tongyi.aliyun.com/qianwen/",
-                            "favicon": ""
-                        },
-                        {
                             "id": 1692709225457,
                             "name": "腾讯元宝",
                             "url": "https://yuanbao.tencent.com/chat",
                             "favicon": ""
                         },
                         {
-                            "id": 1692709291217,
-                            "name": "文心一言",
-                            "url": "https://yiyan.baidu.com/",
+                            "id": 1692709314169,
+                            "name": "Copilot",
+                            "url": "https://copilot.microsoft.com/chats",
+                            "favicon": "",
+                            "bgColor": ""
+                        },
+                        {
+                            "id": 1692709257840,
+                            "name": "通义千问",
+                            "url": "https://tongyi.aliyun.com/qianwen/",
                             "favicon": ""
                         },
                         {
-                            "id": 1692709314169,
-                            "name": "讯飞星火",
-                            "url": "https://xinghuo.xfyun.cn/desk?ch=xhweb_ril",
+                            "id": 1692709291217,
+                            "name": "文心一言",
+                            "url": "https://yiyan.baidu.com/",
                             "favicon": ""
                         }
                     ]
