@@ -12,6 +12,24 @@
     <script src="js/sweetalert2.all.min.js"></script>
     <link href="css/sweetalert2.min.css" rel="stylesheet" />
     <script src="js/axios.min.js"></script>
+
+    <style>
+        .group .group-hover\:block {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 9999;
+        }
+
+        .group:hover .group-hover\:block {
+            display: block;
+            white-space: nowrap;
+            margin-top: 0;
+        }
+    </style>
 </head>
 
 <body class="bg-gray-200 text-gray-800">
@@ -20,14 +38,24 @@
         <div class="container mx-auto flex justify-between py-4 px-8">
             <!-- 左边首页链接 -->
             <a href="index.html" class="text-xl font-bold">首页（非官方）</a>
-            <!-- 右边导航 -->
-            <div class="space-x-4">
-                <a href="https://web.telegram.org/k/#-1715391161"
-                    class="transition-all duration-150 text-gray-700 hover:text-blue-500" target="_blank">FongMi电报群</a>
-                <a href="https://github.com/FongMi/TV"
-                    class="transition-all duration-150 text-gray-700 hover:text-blue-500" target="_blank">FongMi源码</a>
-                <a href="https://github.com/FongMi/Release/tree/fongmi"
-                    class="transition-all duration-150 text-gray-700 hover:text-blue-500" target="_blank">FongMi版本</a>
+            <!-- 右侧导航 -->
+            <div class="space-x-4 flex items-center">
+                <a href="https://github.com/FongMi/TV" class="text-gray-700 hover:text-blue-500"
+                    target="_blank">FongMi源码</a>
+                <a href="https://web.telegram.org/k/#-1715391161" class="text-gray-700 hover:text-blue-500"
+                    target="_blank">FongMi电报群</a>
+                <a href="https://github.com/FongMi/Release/tree/fongmi" class="text-gray-700 hover:text-blue-500"
+                    target="_blank">FongMi版本</a>
+                <!-- 更多菜单 -->
+                <div class="relative group">
+                    <button class="text-gray-700 hover:text-blue-500 cursor-pointer">更多 ▼</button>
+                    <div class="absolute hidden group-hover:block bg-white shadow-lg p-2 rounded-lg mt-2">
+                        <a href="https://web.telegram.org/k/#@TVBoxxoo" class="block px-4 py-2 hover:bg-gray-200"
+                            target="_blank">肥猫电报群</a>
+                        <a href="https://web.telegram.org/k/#@okdespace" class="block px-4 py-2 hover:bg-gray-200"
+                            target="_blank">OK影视电报群</a>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
