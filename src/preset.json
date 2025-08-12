@@ -416,6 +416,13 @@
                             "url": "http://192.168.31.3:9090/ui/metacubexd/",
                             "favicon": "",
                             "bgColor": ""
+                        },
+                        {
+                            "id": 1754997445048,
+                            "name": "GFiber测试",
+                            "url": "https://fiber.google.com/speedtest/",
+                            "favicon": "",
+                            "bgColor": ""
                         }
                     ]
                 },
