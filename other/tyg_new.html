@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>WebSocket 门禁开门工具</title>
+    <style>
+        body { font-family: "微软雅黑", Arial, sans-serif; margin: 30px; }
+        #log { background: #f5f5f5; border: 1px solid #ccc; padding: 10px; height: 200px; overflow-y: auto; }
+        .input-row { margin-bottom: 10px; }
+        label { display: inline-block; width: 100px; }
+        input { padding: 4px; }
+        button { padding: 6px 16px; }
+    </style>
+</head>
+<body>
+    <h2>WebSocket 门禁开门工具</h2>
+    <div class="input-row">
+        <label>账号：</label>
+        <input type="text" id="account">
+    </div>
+    <div class="input-row">
+        <label>密码：</label>
+        <input type="password" id="password">
+    </div>
+    <div class="input-row">
+        <input type="checkbox" id="rememberMe">
+        <label for="rememberMe" style="width:auto;">记住账号密码</label>
+        <button onclick="login()">登录并获取门禁token</button>
+        <span id="tokenStatus"></span>
+    </div>
+    <div class="input-row">
+        <label>门禁token：</label>
+        <input type="text" id="wssToken" style="width:350px;" readonly>
+    </div>
+    <div class="input-row">
+        <button onclick="connectWS()">建立WebSocket连接</button>
+        <span id="wsStatus"></span>
+    </div>
+    <div class="input-row">
+        <label>门编号：</label>
+        <input type="text" id="code" readonly>
+    </div>
+    <div class="input-row">
+        <label>住户编号：</label>
+        <input type="text" id="householdSerial" readonly>
+    </div>
+    <div class="input-row">
+        <button onclick="sendOpenDoor()">发送开门指令</button>
+    </div>
+    <pre id="log"></pre>
+    <script>
+        let ws = null;
+        let log = document.getElementById('log');
+        let wssTokenInput = document.getElementById('wssToken');
+        let tokenStatus = document.getElementById('tokenStatus');
+        let wsStatus = document.getElementById('wsStatus');
+        let loginToken = ""; // 登录token
+        let organizationSeq = "";
+        let mobile = "";
+        let householdSerial = "";
+
+        // 自动填充账号密码
+        window.onload = function() {
+            let savedAccount = localStorage.getItem('account');
+            let savedPassword = localStorage.getItem('password');
+            if (savedAccount) document.getElementById('account').value = savedAccount;
+            if (savedPassword) document.getElementById('password').value = savedPassword;
+            if (savedAccount && savedPassword) document.getElementById('rememberMe').checked = true;
+        };
+
+        function appendLog(msg) {
+            log.textContent += msg + '\n';
+            log.scrollTop = log.scrollHeight;
+        }
+
+        function login() {
+            let account = document.getElementById('account').value;
+            let password = document.getElementById('password').value;
+            let rememberMe = document.getElementById('rememberMe').checked;
+            if (rememberMe) {
+                localStorage.setItem('account', account);
+                localStorage.setItem('password', password);
+            } else {
+                localStorage.removeItem('account');
+                localStorage.removeItem('password');
+            }
+            tokenStatus.textContent = "登录中...";
+            wssTokenInput.value = "";
+            fetch("https://uums.taoyuangu.com:8443/uums/servlet/userLoginServlet", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    body: {
+                        account: account,
+                        password: password
+                    }
+                })
+            })
+            .then(res => res.json())
+            .then(data => {
+                // 登录token
+                loginToken = data?.body?.token || data?.token || "";
+                if (loginToken) {
+                    tokenStatus.textContent = "登录成功，获取门禁token中...";
+                    appendLog("登录成功，获取到登录token：" + loginToken);
+                    getWssToken(loginToken);
+                } else {
+                    tokenStatus.textContent = "登录失败";
+                    appendLog("登录失败，返回：" + JSON.stringify(data));
+                }
+            })
+            .catch(err => {
+                tokenStatus.textContent = "登录异常";
+                appendLog("登录异常：" + err);
+            });
+        }
+
+        function getWssToken(loginToken) {
+            let now = new Date();
+            let time_stamp = now.getFullYear().toString() +
+                String(now.getMonth() + 1).padStart(2, '0') +
+                String(now.getDate()).padStart(2, '0') +
+                String(now.getHours()).padStart(2, '0') +
+                String(now.getMinutes()).padStart(2, '0') +
+                String(now.getSeconds()).padStart(2, '0');
+            fetch("https://sso.taoyuangu.com/cpsApi/servlet/queryOpenHouseholdList/v2", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    body: {
+                        openCode: "",
+                        type: "1"
+                    },
+                    header: {
+                        time_stamp: time_stamp,
+                        token: loginToken
+                    }
+                })
+            })
+            .then(res => res.json())
+            .then(data => {
+                // 取第一个门禁token
+                let wssToken = "";
+                let areaList = data?.data?.areaList || [];
+                if (areaList.length > 0 && areaList[0].list && areaList[0].list.length > 0) {
+                    let info = areaList[0].list[0];
+                    wssToken = info.token;
+                    organizationSeq = areaList[0].organizationSeq || "";
+                    mobile = info.mobile || "";
+                    householdSerial = info.householdSerial || "";
+                    document.getElementById('householdSerial').value = householdSerial;
+                }
+                if (wssToken) {
+                    wssTokenInput.value = wssToken;
+                    tokenStatus.textContent = "门禁token获取成功";
+                    appendLog("门禁token获取成功：" + wssToken);
+                } else {
+                    tokenStatus.textContent = "门禁token获取失败";
+                    appendLog("门禁token获取失败，返回：" + JSON.stringify(data));
+                }
+            })
+            .catch(err => {
+                tokenStatus.textContent = "门禁token获取异常";
+                appendLog("门禁token获取异常：" + err);
+            });
+        }
+
+        function connectWS() {
+            let wssToken = wssTokenInput.value.trim();
+            if (!wssToken) {
+                wsStatus.textContent = "请先获取门禁token";
+                appendLog("请先获取门禁token");
+                return;
+            }
+            wsStatus.textContent = "连接中...";
+            ws = new WebSocket("wss://sso.taoyuangu.com/htmlvdcs/wsserver/websocket?token=" + wssToken);
+
+            ws.onopen = function() {
+                wsStatus.textContent = "已连接";
+                appendLog("WebSocket连接已建立");
+                sendMobileDownloadConfig();
+            };
+
+            ws.onmessage = function(event) {
+                appendLog("收到消息：" + event.data);
+                try {
+                    let msg = JSON.parse(event.data);
+                    if (msg.msgType === "MobileDownloadConfig" || (msg.header && msg.header.msgType === "MobileDownloadConfig")) {
+                        let data = msg.data || msg.body || {};
+                        let doorList = (data.DOOR_CONTROL && data.DOOR_CONTROL.NO_GROUP_LIST) || [];
+                        if (doorList.length > 0) {
+                            // 默认选第一个门
+                            let first = doorList[0];
+                            document.getElementById('code').value = first.Code || "";
+                            appendLog("已自动选择第一个门: " + (first.Code || ""));
+                        }
+                    }
+                } catch (e) {
+                    appendLog("消息解析异常：" + e);
+                }
+            };
+
+            ws.onerror = function(error) {
+                wsStatus.textContent = "连接错误";
+                appendLog("WebSocket发生错误：" + error);
+            };
+
+            ws.onclose = function() {
+                wsStatus.textContent = "已断开";
+                appendLog("WebSocket连接关闭");
+            };
+        }
+
+        function sendMobileDownloadConfig() {
+            let now = new Date();
+            let time_stamp = now.getFullYear().toString() +
+                String(now.getMonth() + 1).padStart(2, '0') +
+                String(now.getDate()).padStart(2, '0') +
+                String(now.getHours()).padStart(2, '0') +
+                String(now.getMinutes()).padStart(2, '0') +
+                String(now.getSeconds()).padStart(2, '0');
+            let payload = {
+                body: {
+                    mobile: mobile,
+                    organizationSeq: organizationSeq
+                },
+                header: {
+                    msgType: "MobileDownloadConfig",
+                    time_stamp: time_stamp,
+                    token: wssTokenInput.value.trim()
+                }
+            };
+            ws.send(JSON.stringify(payload));
+            appendLog("已发送MobileDownloadConfig命令");
+        }
+
+        function sendOpenDoor() {
+            if (!ws || ws.readyState !== 1) {
+                appendLog("WebSocket未连接，正在尝试重连...");
+                connectWS();
+                setTimeout(sendOpenDoor, 1000);
+                return;
+            }
+            let code = document.getElementById('code').value.trim();
+            let now = new Date();
+            let time_stamp = now.getFullYear().toString() +
+                String(now.getMonth() + 1).padStart(2, '0') +
+                String(now.getDate()).padStart(2, '0') +
+                String(now.getHours()).padStart(2, '0') +
+                String(now.getMinutes()).padStart(2, '0') +
+                String(now.getSeconds()).padStart(2, '0');
+            let payload = {
+                body: {
+                    clientType: "2",
+                    code: code,
+                    householdSerial: householdSerial,
+                    mobile: mobile,
+                    number: "0"
+                },
+                header: {
+                    msgType: "OpenDoor",
+                    time_stamp: time_stamp,
+                    token: wssTokenInput.value.trim()
+                }
+            };
+            ws.send(JSON.stringify(payload));
+            appendLog("已发送数据：" + JSON.stringify(payload));
+        }
+    </script>
+</body>
+</html>
