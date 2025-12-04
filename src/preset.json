@@ -457,6 +457,13 @@
                             "url": "https://fiber.google.com/speedtest/",
                             "favicon": "",
                             "bgColor": "#2a602d"
+                        },
+                        {
+                            "id": 1764810666660,
+                            "name": "本机IP归属地",
+                            "url": "https://ip.skk.moe/",
+                            "favicon": "",
+                            "bgColor": "#271e3c"
                         }
                     ]
                 },
@@ -679,20 +686,22 @@
                             "id": 1692630685199,
                             "name": "bootstrap",
                             "url": "https://getbootstrap.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#264c27"
                         },
                         {
                             "id": 1683458867009,
                             "name": "React",
                             "url": "https://react.docschina.org/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#58ba12"
                         },
                         {
                             "id": 1683458933651,
                             "name": "Vue",
                             "url": "https://cn.vuejs.org/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#472f1c"
                         },
                         {
                             "id": 1695393075158,
@@ -706,14 +715,14 @@
                             "name": "Svelte",
                             "url": "https://svelte.dev/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#2f5405"
                         },
                         {
                             "id": 1695393179546,
                             "name": "Pure",
                             "url": "https://purecss.io/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#396d09"
                         }
                     ]
                 },
@@ -725,32 +734,36 @@
                             "id": 1692630641456,
                             "name": "java",
                             "url": "https://www.java.com/zh-CN/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#5a00c8"
                         },
                         {
                             "id": 1692631414869,
                             "name": "Python",
                             "url": "https://docs.python.org/zh-cn",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#5b313f"
                         },
                         {
                             "id": 1692631164262,
                             "name": "PHP",
                             "url": "https://www.php.net/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#2e8584"
                         },
                         {
                             "id": 1692631274421,
                             "name": "Go",
                             "url": "https://go.dev/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#1dc92b"
                         },
                         {
                             "id": 1692630855417,
                             "name": "spring",
                             "url": "https://spring.io/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#051414"
                         }
                     ]
                 },
@@ -762,40 +775,43 @@
                             "id": 1683447074735,
                             "name": "Github",
                             "url": "https://github.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#cf372e"
                         },
                         {
                             "id": 1692626335524,
                             "name": "Gitee",
                             "url": "https://gitee.com/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#1ec82a"
                         },
                         {
                             "id": 1692631673108,
                             "name": "Netlify",
                             "url": "https://www.netlify.com/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#2e5622"
                         },
                         {
                             "id": 1683447295377,
                             "name": "Gitlab",
                             "url": "https://gitlab.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#1f0616"
                         },
                         {
                             "id": 1692631629660,
                             "name": "Replit",
                             "url": "https://replit.com/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#289508"
                         },
                         {
                             "id": 1683447319359,
                             "name": "cloudflare",
                             "url": "https://pages.cloudflare.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#203e33"
                         }
                     ]
                 },
@@ -807,38 +823,43 @@
                             "id": 1683447199465,
                             "name": "V2ex",
                             "url": "https://www.v2ex.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#f27165"
                         },
                         {
                             "id": 1692629998513,
                             "name": "博客园",
                             "url": "https://www.cnblogs.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#281d36"
                         },
                         {
                             "id": 1683447052727,
                             "name": "稀土掘金",
                             "url": "https://juejin.cn/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#65c3e8"
                         },
                         {
                             "id": 1683447183594,
                             "name": "思否",
                             "url": "https://segmentfault.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#533947"
                         },
                         {
                             "id": 1692630022017,
                             "name": "开源中国",
                             "url": "https://www.oschina.net/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#080039"
                         },
                         {
                             "id": 1692629966665,
                             "name": "开发者",
                             "url": "https://toutiao.io/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#0c2f41"
                         }
                     ]
                 },
@@ -850,38 +871,43 @@
                             "id": 1683458701435,
                             "name": "阿里云",
                             "url": "https://www.aliyun.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#5b6110"
                         },
                         {
                             "id": 1683458709123,
                             "name": "腾讯云",
                             "url": "https://cloud.tencent.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#3f5e5c"
                         },
                         {
                             "id": 1683458738963,
                             "name": "华为云",
                             "url": "https://www.huaweicloud.com/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#5c379f"
                         },
                         {
                             "id": 1683458727144,
                             "name": "谷歌云",
                             "url": "https://cloud.google.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#3a5324"
                         },
                         {
                             "id": 1683458716567,
                             "name": "AWS",
                             "url": "https://aws.amazon.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#10274b"
                         },
                         {
                             "id": 1683458750804,
                             "name": "Cloudflare",
                             "url": "https://www.cloudflare.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#342142"
                         }
                     ]
                 },
@@ -893,37 +919,43 @@
                             "id": 1692630321129,
                             "name": "w3school",
                             "url": "https://www.w3school.com.cn/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#3f5a08"
                         },
                         {
                             "id": 1692630336416,
                             "name": "菜鸟教程",
                             "url": "https://www.runoob.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#341c21"
                         },
                         {
                             "id": 1683458900897,
                             "name": "Uni-app",
                             "url": "https://uniapp.dcloud.net.cn/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#1b2f4d"
                         },
                         {
                             "id": 1683458966567,
                             "name": "JQuery",
                             "url": "https://jquery.cuishifeng.cn/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#8f133d"
                         },
                         {
                             "id": 1692630446536,
                             "name": "廖雪峰",
                             "url": "https://www.liaoxuefeng.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#977416"
                         },
                         {
                             "id": 1692630083018,
                             "name": "CSDN",
                             "url": "https://www.csdn.net/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#106328"
                         }
                     ]
                 },
@@ -935,40 +967,43 @@
                             "id": 1683458815984,
                             "name": "Vue",
                             "url": "https://cn.vuejs.org/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#741f04"
                         },
                         {
                             "id": 1683458778330,
                             "name": "MDN",
                             "url": "https://developer.mozilla.org/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#0a2412"
                         },
                         {
                             "id": 1683458788774,
                             "name": "Android",
                             "url": "https://developer.android.com/docs",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#0a7f33"
                         },
                         {
                             "id": 1683458797891,
                             "name": "Apple",
                             "url": "https://developer.apple.com/cn/documentation/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#672127"
                         },
                         {
                             "id": 1683458807999,
                             "name": "W3school",
                             "url": "https://www.w3school.com.cn/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#293225"
                         },
                         {
                             "id": 1683458953528,
                             "name": "MybatisPlus",
                             "url": "https://baomidou.com/pages/24112f/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#c54732"
                         }
                     ]
                 }
@@ -983,42 +1018,46 @@
                     "name": "ChatGPT",
                     "siteList": [
                         {
+                            "id": 1692709225457,
+                            "name": "Google AI",
+                            "url": "https://aistudio.google.com/",
+                            "favicon": "",
+                            "bgColor": "#3b3106"
+                        },
+                        {
+                            "id": 1692709257840,
+                            "name": "通义千问",
+                            "url": "https://tongyi.aliyun.com/qianwen/",
+                            "favicon": "",
+                            "bgColor": "#53184e"
+                        },
+                        {
                             "id": 1692709141937,
                             "name": "豆包",
                             "url": "https://www.doubao.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#668733"
                         },
                         {
                             "id": 1692709180265,
                             "name": "DeepSeek",
                             "url": "https://chat.deepseek.com/",
                             "favicon": "",
-                            "bgColor": ""
-                        },
-                        {
-                            "id": 1692709225457,
-                            "name": "腾讯元宝",
-                            "url": "https://yuanbao.tencent.com/chat",
-                            "favicon": ""
+                            "bgColor": "#e18456"
                         },
                         {
                             "id": 1692709314169,
                             "name": "Copilot",
                             "url": "https://copilot.microsoft.com/chats",
                             "favicon": "",
-                            "bgColor": ""
-                        },
-                        {
-                            "id": 1692709257840,
-                            "name": "通义千问",
-                            "url": "https://tongyi.aliyun.com/qianwen/",
-                            "favicon": ""
+                            "bgColor": "#a6263f"
                         },
                         {
                             "id": 1692709291217,
                             "name": "文心一言",
                             "url": "https://yiyan.baidu.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#0b5c10"
                         }
                     ]
                 },
@@ -1030,38 +1069,43 @@
                             "id": 1692710182015,
                             "name": "codeium",
                             "url": "https://codeium.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#4c7a19"
                         },
                         {
                             "id": 1692710197045,
                             "name": "cursor",
                             "url": "https://www.cursor.so/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#290aaa"
                         },
                         {
                             "id": 1692710271774,
                             "name": "cody",
                             "url": "https://sourcegraph.com/get-cody",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#54181d"
                         },
                         {
                             "id": 1692710334591,
                             "name": "GoogleAI",
                             "url": "https://ai.google/build/machine-learning/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#70496b"
                         },
                         {
                             "id": 1692710392702,
                             "name": "regex",
                             "url": "https://regex.ai/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#29bf1e"
                         },
                         {
                             "id": 1692710531805,
                             "name": "teamsmart",
                             "url": "https://www.teamsmart.ai/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#26000c"
                         }
                     ]
                 },
@@ -1073,37 +1117,43 @@
                             "id": 1692709403400,
                             "name": "Notion AI",
                             "url": "https://www.notion.so/product/ai",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#182c1a"
                         },
                         {
                             "id": 1692709450905,
                             "name": "typeset",
                             "url": "https://typeset.io/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#6cb52a"
                         },
                         {
                             "id": 1692709483354,
                             "name": "magickpen",
                             "url": "https://magickpen.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#0b6ff0"
                         },
                         {
                             "id": 1692709542367,
                             "name": "hoppycopy",
                             "url": "https://www.hoppycopy.co/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#02c6d6"
                         },
                         {
                             "id": 1692709514880,
                             "name": "cowriter",
                             "url": "https://cowriter.org/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#2d7702"
                         },
                         {
                             "id": 1692709620655,
                             "name": "Jenni Ai",
                             "url": "https://jenni.ai/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#6d834c"
                         }
                     ]
                 },
@@ -1115,38 +1165,43 @@
                             "id": 1692709660399,
                             "name": "pixelbin",
                             "url": "https://www.pixelbin.io/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#67524a"
                         },
                         {
                             "id": 1692709871199,
                             "name": "phygital",
                             "url": "https://phygital.plus/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#142336"
                         },
                         {
                             "id": 1692709932640,
                             "name": "media",
                             "url": "https://www.media.io/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#1c17ca"
                         },
                         {
                             "id": 1692711283595,
                             "name": "Playground",
                             "url": "https://playgroundai.com/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#5b1bec"
                         },
                         {
                             "id": 1692711306754,
                             "name": "leonardo",
                             "url": "https://leonardo.ai/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#1524ac"
                         },
                         {
                             "id": 1692711394451,
                             "name": "dreamstudio",
                             "url": "https://dreamstudio.ai/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#5d0524"
                         }
                     ]
                 },
@@ -1158,38 +1213,43 @@
                             "id": 1692710577823,
                             "name": "fliki",
                             "url": "https://fliki.ai/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#060fa0"
                         },
                         {
                             "id": 1692710739725,
                             "name": "Wonder",
                             "url": "https://wonderdynamics.com/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#302b5d"
                         },
                         {
                             "id": 1692710655773,
                             "name": "BiLi GPT",
                             "url": "https://b.jimmylv.cn/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#5f3718"
                         },
                         {
                             "id": 1692710767708,
                             "name": "tavus",
                             "url": "https://www.tavus.io/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#f15e46"
                         },
                         {
                             "id": 1692710803950,
                             "name": "clipchamp",
                             "url": "https://clipchamp.com/en/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#bb221c"
                         },
                         {
                             "id": 1692710852741,
                             "name": "hourone",
                             "url": "https://hourone.ai/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#2d74bc"
                         }
                     ]
                 },
@@ -1201,37 +1261,43 @@
                             "id": 1692711064491,
                             "name": "gamma",
                             "url": "https://gamma.app/nb49hp25keqkliu/join?code=bzob65metz807x5",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#394623"
                         },
                         {
                             "id": 1692711076862,
                             "name": "tome",
                             "url": "https://tome.app/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#3a4c49"
                         },
                         {
                             "id": 1692711114923,
                             "name": "BeautifulAI",
                             "url": "https://www.beautiful.ai/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#0d8c39"
                         },
                         {
                             "id": 1692711154718,
                             "name": "xmind",
                             "url": "https://xmind.ai/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#46194b"
                         },
                         {
                             "id": 1692711193083,
                             "name": "chatdoc",
                             "url": "https://chatdoc.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#4e13e7"
                         },
                         {
                             "id": 1692711210757,
                             "name": "resumaker",
                             "url": "https://resumaker.ai/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#686f74"
                         }
                     ]
                 }
@@ -1257,35 +1323,35 @@
                             "name": "中国铁路",
                             "url": "https://www.12306.cn/index/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#226a52"
                         },
                         {
                             "id": 1695436475258,
                             "name": "携程旅行",
                             "url": "https://www.ctrip.com/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#2b5bec"
                         },
                         {
                             "id": 1695436491428,
                             "name": "去哪儿",
                             "url": "https://www.qunar.com/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#231521"
                         },
                         {
                             "id": 1695436508182,
                             "name": "马蜂窝",
                             "url": "https://www.mafengwo.cn/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#2102b9"
                         },
                         {
                             "id": 1695436618422,
                             "name": "同程旅行",
                             "url": "https://www.ly.com/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#fb3223"
                         }
                     ]
                 },
@@ -1298,21 +1364,21 @@
                             "name": "默沙东",
                             "url": "https://www.msdmanuals.cn/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#166ec0"
                         },
                         {
                             "id": 1695436886632,
                             "name": "丁香园",
                             "url": "https://www.dxy.cn/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#b416f1"
                         },
                         {
                             "id": 1695436714070,
                             "name": "用药助手",
                             "url": "https://drugs.dxy.cn/pc",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#3e610e"
                         },
                         {
                             "id": 1695436750660,
@@ -1326,14 +1392,14 @@
                             "name": "Cochrane",
                             "url": "https://www.cochrane.org/zh-hans/evidence",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#f10a89"
                         },
                         {
                             "id": 1695436684899,
                             "name": "丁香医生",
                             "url": "https://dxy.com/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#6a1b2a"
                         }
                     ]
                 },
@@ -1346,35 +1412,35 @@
                             "name": "便民查询",
                             "url": "https://www.bmcx.com/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#1c2a3b"
                         },
                         {
                             "id": 1695436941204,
                             "name": "天气预报",
                             "url": "https://www.windy.com/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#120217"
                         },
                         {
                             "id": 1695436995851,
                             "name": "百度地图",
                             "url": "https://map.baidu.com/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#505120"
                         },
                         {
                             "id": 1695437162230,
                             "name": "查快递",
                             "url": "https://www.kuaidi100.com/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#2d5d3c"
                         },
                         {
                             "id": 1695437057787,
                             "name": "万年历",
                             "url": "https://www.wnl.cc/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#5a9b63"
                         },
                         {
                             "id": 1695437615691,
@@ -1401,7 +1467,7 @@
                             "name": "豆果美食",
                             "url": "https://www.douguo.com/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#0cbb35"
                         },
                         {
                             "id": 1695439450663,
@@ -1415,14 +1481,14 @@
                             "name": "美食杰",
                             "url": "https://www.meishij.net/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#3322a2"
                         },
                         {
                             "id": 1695439509103,
                             "name": "下厨房",
                             "url": "https://www.xiachufang.com/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#0c0794"
                         },
                         {
                             "id": 1695439664846,
@@ -1442,28 +1508,28 @@
                             "name": "Boss直聘",
                             "url": "https://www.zhipin.com/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#305481"
                         },
                         {
                             "id": 1695439210766,
                             "name": "领英",
                             "url": "https://www.linkedin.com/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#132005"
                         },
                         {
                             "id": 1695439190291,
                             "name": "拉勾网",
                             "url": "https://www.lagou.com/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#c90c23"
                         },
                         {
                             "id": 1695439169220,
                             "name": "前程无忧",
                             "url": "https://www.51job.com/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#a34008"
                         },
                         {
                             "id": 1695439231678,
@@ -1504,7 +1570,7 @@
                             "name": "平安银行",
                             "url": "https://bank.pingan.com/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#5d6e0b"
                         },
                         {
                             "id": 1695438260272,
@@ -1538,42 +1604,42 @@
                             "name": "央视频道",
                             "url": "https://tv.cctv.com/live/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#e8032e"
                         },
                         {
                             "id": 1695440085275,
                             "name": "中国体彩",
                             "url": "https://www.lottery.gov.cn/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#407b64"
                         },
                         {
                             "id": 1695440119945,
                             "name": "汽车之家",
                             "url": "https://www.autohome.com.cn/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#3f0436"
                         },
                         {
                             "id": 1695440153445,
                             "name": "东方财富",
                             "url": "https://www.eastmoney.com/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#ba072b"
                         },
                         {
                             "id": 1695440182419,
                             "name": "天天基金",
                             "url": "https://fund.eastmoney.com/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#001f18"
                         },
                         {
                             "id": 1695440391003,
                             "name": "在线电台",
                             "url": "https://www.diantaiwang.com/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#2f3d11"
                         }
                     ]
                 }
@@ -1592,37 +1658,42 @@
                             "name": "bilibili",
                             "url": "https://live.bilibili.com/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#30131a"
                         },
                         {
                             "id": 1692885347405,
                             "name": "斗鱼",
                             "url": "https://www.douyu.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#11503f"
                         },
                         {
                             "id": 1692885370137,
                             "name": "虎牙",
                             "url": "https://www.huya.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#3d29bc"
                         },
                         {
                             "id": 1692885533433,
                             "name": "YY直播",
                             "url": "https://www.yy.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#92a250"
                         },
                         {
                             "id": 1692885697600,
                             "name": "CCTV",
                             "url": "https://tv.cctv.com/live/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#491d38"
                         },
                         {
                             "id": 1692885846759,
                             "name": "抖音直播",
                             "url": "https://live.douyin.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#453f7a"
                         }
                     ]
                 },
@@ -1634,37 +1705,43 @@
                             "id": 1692886114255,
                             "name": "steam",
                             "url": "https://store.steampowered.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#0144cc"
                         },
                         {
                             "id": 1692886243544,
                             "name": "育碧游戏",
                             "url": "https://zh-cn.ubisoft.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#028b2d"
                         },
                         {
                             "id": 1692886481718,
                             "name": "EA",
                             "url": "https://www.ea.com/zh-cn",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#0d0e5d"
                         },
                         {
                             "id": 1692886133959,
                             "name": "xbox",
                             "url": "https://www.xbox.com/zh-CN/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#0c3101"
                         },
                         {
                             "id": 1692886193967,
                             "name": "bethesda",
                             "url": "https://bethesda.net/zh-CN/dashboard",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#1908c9"
                         },
                         {
                             "id": 1692886338918,
                             "name": "taptap",
                             "url": "https://www.taptap.cn/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#001131"
                         }
                     ]
                 },
@@ -1676,37 +1753,43 @@
                             "id": 1692625671022,
                             "name": "bilibili",
                             "url": "https://www.bilibili.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#0d6a74"
                         },
                         {
                             "id": 1683445731544,
                             "name": "西瓜视频",
                             "url": "https://www.ixigua.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#dc7227"
                         },
                         {
                             "id": 1692625705382,
                             "name": "YouTube",
                             "url": "https://www.youtube.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#951a16"
                         },
                         {
                             "id": 1683445638708,
                             "name": "爱奇艺",
                             "url": "https://www.iqiyi.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#126903"
                         },
                         {
                             "id": 1692625737494,
                             "name": "奈飞",
                             "url": "https://media.netflix.com/zh_cn/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#331c3f"
                         },
                         {
                             "id": 1692625928165,
                             "name": "咪咕视频",
                             "url": "https://www.miguvideo.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#52106f"
                         }
                     ]
                 },
@@ -1718,37 +1801,43 @@
                             "id": 1692625992366,
                             "name": "QQ音乐",
                             "url": "https://y.qq.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#3a012e"
                         },
                         {
                             "id": 1692626008998,
                             "name": "网易云",
                             "url": "https://music.163.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#9e270c"
                         },
                         {
                             "id": 1692626023605,
                             "name": "酷狗",
                             "url": "https://www.kugou.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#57035c"
                         },
                         {
                             "id": 1692626038158,
                             "name": "酷我",
                             "url": "http://www.kuwo.cn/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#13cb3f"
                         },
                         {
                             "id": 1692626121861,
                             "name": "Spotify",
                             "url": "https://open.spotify.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#569b18"
                         },
                         {
                             "id": 1692626200341,
                             "name": "豆瓣音乐",
                             "url": "https://music.douban.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#043d3b"
                         }
                     ]
                 },
@@ -1760,37 +1849,43 @@
                             "id": 1692887645929,
                             "name": "bilibili漫画",
                             "url": "https://manga.bilibili.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#51653f"
                         },
                         {
                             "id": 1692887675913,
                             "name": "腾讯动漫",
                             "url": "https://ac.qq.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#4f1641"
                         },
                         {
                             "id": 1692887709895,
                             "name": "快看漫画",
                             "url": "https://www.kuaikanmanhua.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#052541"
                         },
                         {
                             "id": 1692887754479,
                             "name": "极速漫画",
                             "url": "https://www.1kkk.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#ed8f75"
                         },
                         {
                             "id": 1692887789927,
                             "name": "X漫画",
                             "url": "https://www.xmanhua.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#390c8b"
                         },
                         {
                             "id": 1692887845024,
                             "name": "动漫啦",
                             "url": "https://www.dongman.la",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#433a46"
                         }
                     ]
                 },
@@ -1802,37 +1897,43 @@
                             "id": 1692886804892,
                             "name": "起点",
                             "url": "https://www.qidian.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#04113a"
                         },
                         {
                             "id": 1692886865548,
                             "name": "潇湘学院",
                             "url": "https://www.xxsy.net/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#613318"
                         },
                         {
                             "id": 1692886883451,
                             "name": "晋江文学",
                             "url": "https://www.jjwxc.net/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#1f6c04"
                         },
                         {
                             "id": 1692886908988,
                             "name": "红袖添香",
                             "url": "https://www.hongxiu.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#ba7d42"
                         },
                         {
                             "id": 1692886938955,
                             "name": "纵横",
                             "url": "https://www.zongheng.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#146420"
                         },
                         {
                             "id": 1692886968516,
                             "name": "QQ阅读",
                             "url": "https://book.qq.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#1a4232"
                         }
                     ]
                 },
@@ -1844,7 +1945,8 @@
                             "id": 1692887885936,
                             "name": "腾讯体育",
                             "url": "https://sports.qq.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#0f786f"
                         },
                         {
                             "id": 1692887903167,
@@ -1857,25 +1959,29 @@
                             "id": 1692887928375,
                             "name": "央视体育",
                             "url": "https://sports.cctv.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#722b14"
                         },
                         {
                             "id": 1692887945903,
                             "name": "NBA中国",
                             "url": "https://china.nba.cn/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#4624b0"
                         },
                         {
                             "id": 1692887971367,
                             "name": "直播8",
                             "url": "https://www.zhibo8.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#209d38"
                         },
                         {
                             "id": 1692888036919,
                             "name": "虎扑",
                             "url": "https://www.hupu.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#65228d"
                         }
                     ]
                 }
