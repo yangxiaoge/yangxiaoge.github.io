@@ -8,7 +8,6 @@
                     "id": 1692883177931,
                     "name": "社交",
                     "siteList": [
-                        
                         {
                             "id": 1692883198234,
                             "name": "微博",
@@ -22,13 +21,6 @@
                             "url": "https://rebang.today/",
                             "favicon": "",
                             "bgColor": "#282f0e"
-                        },
-                        {
-                            "id": 1692883335754,
-                            "name": "知乎",
-                            "url": "https://www.zhihu.com/",
-                            "favicon": "",
-                            "bgColor": "#af3b20"
                         },
                         {
                             "id": 1692883352258,
