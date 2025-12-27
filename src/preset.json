@@ -23,6 +23,13 @@
                             "bgColor": "#282f0e"
                         },
                         {
+                            "id": 1692883335754,
+                            "name": "知乎",
+                            "url": "https://www.zhihu.com/",
+                            "favicon": "",
+                            "bgColor": "#af3b20"
+                        },
+                        {
                             "id": 1692883352258,
                             "name": "贴吧",
                             "url": "https://tieba.baidu.com/",
@@ -464,6 +471,13 @@
                     "id": 1747728135467,
                     "name": "工具",
                     "siteList": [
+                        {
+                            "id": 1766802717554,
+                            "name": "天气时钟看板",
+                            "url": "https://yangxiaoge.github.io/clock-dashboard/",
+                            "favicon": "",
+                            "bgColor": "#ce2b2d"
+                        },
                         {
                             "id": 1747728048646,
                             "name": "API大全",
@@ -2130,7 +2144,7 @@
                             "name": "学信网",
                             "url": "https://www.chsi.com.cn/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#238c82"
                         },
                         {
                             "id": 1695433909964,
@@ -2178,7 +2192,7 @@
                             "name": "中国人事",
                             "url": "http://cpta.mohrss.gov.cn/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#1317d8"
                         },
                         {
                             "id": 1695434692029,
@@ -2192,7 +2206,7 @@
                             "name": "华图在线",
                             "url": "https://v.huatu.com/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#181f38"
                         },
                         {
                             "id": 1695434553310,
@@ -2206,7 +2220,7 @@
                             "name": "公务员网",
                             "url": "https://gongwuyuan.eol.cn/guojia/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#729a1c"
                         },
                         {
                             "id": 1695434963607,
@@ -2247,7 +2261,7 @@
                             "name": "生物医学",
                             "url": "http://www.csbme.org/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#185a02"
                         },
                         {
                             "id": 1695435337189,
@@ -2261,7 +2275,7 @@
                             "name": "建筑设计",
                             "url": "https://csadi.com.cn/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#311613"
                         }
                     ]
                 },
@@ -2274,42 +2288,42 @@
                             "name": "网易公开课",
                             "url": "https://open.163.com/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#b5164b"
                         },
                         {
                             "id": 1695435536512,
                             "name": "网易云课堂",
                             "url": "https://study.163.com/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#13a21f"
                         },
                         {
                             "id": 1695435557590,
                             "name": "慕课网",
                             "url": "https://www.imooc.com/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#3b421a"
                         },
                         {
                             "id": 1695435591978,
                             "name": "爱课程",
                             "url": "https://www.icourses.cn/home/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#05c83f"
                         },
                         {
                             "id": 1695435690169,
                             "name": "蓝桥云课",
                             "url": "https://www.lanqiao.cn/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#48525d"
                         },
                         {
                             "id": 1695435733728,
                             "name": "极客时间",
                             "url": "https://time.geekbang.org/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#1f4419"
                         }
                     ]
                 }
@@ -2324,40 +2338,46 @@
                     "name": "灵感",
                     "siteList": [
                         {
-                            "id": 1692626725580,
-                            "name": "ant.design",
-                            "url": "https://ant.design/index-cn",
-                            "favicon": ""
+                            "id": 1695431962511,
+                            "name": "智库",
+                            "url": "https://doc.mbalib.com/",
+                            "favicon": "",
+                            "bgColor": "#2c3612"
                         },
                         {
-                            "id": 1692626781554,
-                            "name": "pinterest",
-                            "url": "https://www.pinterest.com/",
-                            "favicon": ""
+                            "id": 1695432171831,
+                            "name": "知海",
+                            "url": "https://www.zhwenku.com/",
+                            "favicon": "",
+                            "bgColor": "#106817"
                         },
                         {
-                            "id": 1692626830850,
-                            "name": "dribbble",
-                            "url": "https://dribbble.com/shots",
-                            "favicon": ""
+                            "id": 1695431812895,
+                            "name": "360文库",
+                            "url": "https://wenku.so.com/",
+                            "favicon": "",
+                            "bgColor": "#7c0b19"
                         },
                         {
-                            "id": 1692626849580,
-                            "name": "behance",
-                            "url": "https://www.behance.net/",
-                            "favicon": ""
+                            "id": 1695431887080,
+                            "name": "豆丁",
+                            "url": "https://www.docin.com/",
+                            "favicon": "",
+                            "bgColor": "#3914d8"
                         },
                         {
-                            "id": 1692626873658,
-                            "name": "花瓣",
-                            "url": "https://huaban.com/",
-                            "favicon": ""
+                            "id": 1695431833767,
+                            "name": "道客巴巴",
+                            "url": "https://www.doc88.com/",
+                            "favicon": "",
+                            "bgColor": "#1b0853"
                         },
                         {
-                            "id": 1692627035451,
-                            "name": "uplabs",
-                            "url": "https://www.uplabs.com/",
-                            "favicon": ""
+                            "id": 1695431922904,
+                            "name": "合同范文",
+                            "url": "https://cont.12315.cn/",
+                            "favicon": "",
+                            "bgColor": "#ed9441"
                         }
                     ]
                 },
@@ -2366,35 +2386,39 @@
                     "name": "图标",
                     "siteList": [
                         {
-                            "id": 1692627331161,
-                            "name": "iconfont",
-                            "url": "https://www.iconfont.cn/",
-                            "favicon": ""
+                            "id": 1695432250361,
+                            "name": "谷歌学术",
+                            "url": "https://scholar.google.com/",
+                            "favicon": "",
+                            "bgColor": "#23c425"
                         },
                         {
                             "id": 1692627440840,
                             "name": "Project",
                             "url": "https://thenounproject.com/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#b8562c"
                         },
                         {
-                            "id": 1692627508897,
-                            "name": "icons8",
-                            "url": "https://icons8.com/",
-                            "favicon": ""
+                            "id": 1695432322512,
+                            "name": "万方数据",
+                            "url": "https://www.wanfangdata.com.cn/",
+                            "favicon": "",
+                            "bgColor": "#f90c17"
                         },
                         {
-                            "id": 1692627535857,
-                            "name": "iconpark",
-                            "url": "https://iconpark.oceanengine.com/home",
-                            "favicon": ""
+                            "id": 1695432751110,
+                            "name": "OpenAccess",
+                            "url": "https://www.oalib.com/",
+                            "favicon": "",
+                            "bgColor": "#603015"
                         },
                         {
-                            "id": 1692627737975,
-                            "name": "flaticon",
-                            "url": "https://www.flaticon.com/",
-                            "favicon": ""
+                            "id": 1695431763296,
+                            "name": "知网",
+                            "url": "https://www.cnki.net/",
+                            "favicon": "",
+                            "bgColor": "#1c0a1d"
                         }
                     ]
                 },
@@ -2403,42 +2427,46 @@
                     "name": "字体",
                     "siteList": [
                         {
-                            "id": 1692628113088,
-                            "name": "fontspace",
-                            "url": "https://www.fontspace.com/",
-                            "favicon": ""
-                        },
-                        {
-                            "id": 1692628145751,
-                            "name": "字体天下",
-                            "url": "https://www.fonts.net.cn/",
-                            "favicon": ""
-                        },
-                        {
-                            "id": 1692628250479,
-                            "name": "谷歌字体",
-                            "url": "https://fonts.google.com/",
-                            "favicon": ""
-                        },
-                        {
-                            "id": 1692628285703,
-                            "name": "Squirrel",
-                            "url": "https://www.fontsquirrel.com/",
+                            "id": 1695433401115,
+                            "name": "剑桥词典",
+                            "url": "https://dictionary.cambridge.org/zhs/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#7d3f01"
                         },
                         {
-                            "id": 1692628316415,
-                            "name": "DaFont",
-                            "url": "https://www.dafont.com/",
-                            "favicon": ""
-                        },
-                        {
-                            "id": 1692628426607,
-                            "name": "1001fonts",
-                            "url": "https://www.1001fonts.com/",
+                            "id": 1695433462806,
+                            "name": "汉语词典",
+                            "url": "https://www.zdic.net/",
                             "favicon": "",
-                            "bgColor": "#6b9a1c"
+                            "bgColor": "#3d6154"
+                        },
+                        {
+                            "id": 1695433497414,
+                            "name": "维基词典",
+                            "url": "https://zh.wiktionary.org/",
+                            "favicon": "",
+                            "bgColor": "#8d5d14"
+                        },
+                        {
+                            "id": 1695433545630,
+                            "name": "柯林斯词典",
+                            "url": "https://www.collinsdictionary.com/zh/",
+                            "favicon": "",
+                            "bgColor": "#0b6a51"
+                        },
+                        {
+                            "id": 1695433627127,
+                            "name": "默沙东手册",
+                            "url": "https://www.msdmanuals.cn/",
+                            "favicon": "",
+                            "bgColor": "#4c0f7c"
+                        },
+                        {
+                            "id": 1695433382623,
+                            "name": "有道",
+                            "url": "https://www.youdao.com/",
+                            "favicon": "",
+                            "bgColor": "#2d1579"
                         }
                     ]
                 },
@@ -2450,39 +2478,43 @@
                             "id": 1692628708638,
                             "name": "colorhunt",
                             "url": "https://colorhunt.co/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#342123"
                         },
                         {
                             "id": 1692628664413,
                             "name": "colordrop",
                             "url": "https://colordrop.io/",
-                            "favicon": ""
-                        },
-                        {
-                            "id": 1692628811037,
-                            "name": "materialui",
-                            "url": "https://materialui.co/",
-                            "favicon": ""
-                        },
-                        {
-                            "id": 1692628541415,
-                            "name": "adobe",
-                            "url": "https://color.adobe.com/zh/create/color-wheel",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#117d2c"
+                        },
+                        {
+                            "id": 1695433941561,
+                            "name": "成绩查询",
+                            "url": "https://cjcx.neea.edu.cn/",
+                            "favicon": "",
+                            "bgColor": "#6a811b"
+                        },
+                        {
+                            "id": 1695434085438,
+                            "name": "证书查询",
+                            "url": "https://zscx.neea.edu.cn/",
+                            "favicon": "",
+                            "bgColor": "#2f3fd4"
                         },
                         {
                             "id": 1692628601607,
                             "name": "coolors",
                             "url": "https://coolors.co/palettes/trending",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#3a3f35"
                         },
                         {
                             "id": 1692628645077,
                             "name": "Toptal",
                             "url": "https://www.toptal.com/designers/colourcode",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#203918"
                         }
                     ]
                 },
@@ -2494,37 +2526,43 @@
                             "id": 1692629565202,
                             "name": "Axure",
                             "url": "https://www.axure.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#284123"
                         },
                         {
                             "id": 1692629007941,
                             "name": "pixso",
                             "url": "https://pixso.cn/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#f9732e"
                         },
                         {
                             "id": 1692629037420,
                             "name": "墨刀",
                             "url": "https://modao.cc/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#02b474"
                         },
                         {
                             "id": 1692629073956,
                             "name": "spline",
                             "url": "https://spline.design/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#62084e"
                         },
                         {
                             "id": 1692629214691,
                             "name": "miro",
                             "url": "https://miro.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#60c277"
                         },
                         {
-                            "id": 1692629383851,
-                            "name": "Fabrie",
-                            "url": "https://www.fabrie.cn/home",
-                            "favicon": ""
+                            "id": 1695434963607,
+                            "name": "公职咨询",
+                            "url": "http://www.chinagwyw.org/zkgg/gkjz/gjl/",
+                            "favicon": "",
+                            "bgColor": "#3c1200"
                         }
                     ]
                 },
@@ -2536,40 +2574,43 @@
                             "id": 1692626953555,
                             "name": "优设教程",
                             "url": "https://uiiiuiii.com/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#5fbab7"
                         },
                         {
                             "id": 1695391616513,
                             "name": "优优教程",
                             "url": "https://uiiiuiii.com/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#75441e"
                         },
                         {
                             "id": 1692626889270,
                             "name": "酷站",
                             "url": "https://www.zcool.com.cn/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#4a1c1f"
                         },
                         {
                             "id": 1692627100170,
                             "name": "美叶",
                             "url": "https://www.meiye.art/",
-                            "favicon": ""
+                            "favicon": "",
+                            "bgColor": "#a30f03"
                         },
                         {
                             "id": 1695391578969,
                             "name": "TUTS+",
                             "url": "https://design.tutsplus.com/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#f82e58"
                         },
                         {
                             "id": 1695391655121,
                             "name": "Medium",
                             "url": "https://medium.design/",
                             "favicon": "",
-                            "bgColor": ""
+                            "bgColor": "#e82b08"
                         }
                     ]
                 }
