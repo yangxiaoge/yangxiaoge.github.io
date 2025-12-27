@@ -17,3 +17,6 @@ https://yangxiaoge.github.io/imsyy/
 
 # 条码生成测试
 https://yangxiaoge.github.io/barcode/
+
+# 天气时钟看板
+https://yangxiaoge.github.io/clock-dashboard/
