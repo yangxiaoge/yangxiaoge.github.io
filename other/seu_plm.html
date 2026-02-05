@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>精简版-项目管理平台</title>
+    <style>
+        /* --- 全局样式变量 --- */
+        :root {
+            --primary-color: #2563eb;
+            --bg-color: #f8fafc;
+            --text-main: #1e293b;
+            --text-sub: #64748b;
+            --border-color: #e2e8f0;
+            --danger-red: #ef4444; 
+            --success-green: #10b981;
+        }
+
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
+            margin: 0; padding: 30px 20px; background-color: var(--bg-color); color: var(--text-main);
+        }
+
+        .container { 
+            max-width: 1550px; margin: auto; background: white; padding: 30px; border-radius: 12px; 
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); 
+        }
+
+        h2 { text-align: center; color: #0f172a; margin-bottom: 30px; font-weight: 700; }
+        
+        /* 登录区域 */
+        .login-box { 
+            display: flex; gap: 15px; justify-content: center; align-items: center; 
+            margin-bottom: 25px; padding: 20px; background: #fff; border: 1px solid var(--border-color); border-radius: 12px; 
+        }
+        .form-group { display: flex; align-items: center; gap: 8px; }
+        input[type="text"], input[type="password"] { 
+            padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; outline: none; width: 160px;
+        }
+        
+        button { 
+            background-color: var(--primary-color); color: white; border: none; padding: 10px 20px; 
+            border-radius: 6px; cursor: pointer; font-weight: 600; transition: 0.2s;
+        }
+        button:hover { background-color: #1d4ed8; }
+        
+        #status-msg { 
+            margin-bottom: 20px; padding: 12px; border-radius: 8px; display: none; 
+            text-align: center; font-size: 14px; font-weight: 500;
+        }
+        .success { background-color: #f0fdf4; color: #15803d; border: 1px solid #b7eb8f; }
+        .error { background-color: #fef2f2; color: #b91c1c; border: 1px solid #fecaca; }
+
+        /* 表格样式 */
+        .table-wrapper { overflow-x: auto; padding-bottom: 180px; }
+        table { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 14px; table-layout: fixed; }
+        
+        th { 
+            background-color: #f8fafc; color: var(--text-sub); padding: 16px 10px; 
+            border-bottom: 2px solid var(--border-color); vertical-align: top; position: relative;
+        }
+        .th-label { display: block; margin-bottom: 8px; font-size: 13px; font-weight: 700; color: var(--text-main); }
+
+        .header-filter { 
+            display: block; padding: 5px; border: 1px solid var(--border-color); 
+            border-radius: 4px; font-size: 12px; width: 100%; box-sizing: border-box;
+        }
+
+        td { padding: 16px 10px; border-bottom: 1px solid #f1f5f9; vertical-align: middle; }
+        tr:hover td { background-color: #f1f5f9; }
+        
+        /* 状态标签样式 */
+        .tag { padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 600; display: inline-block; }
+        .tag-completed { background: #f0fdf4; color: #16a34a; }
+        .tag-ongoing { background: #eff6ff; color: #2563eb; }
+        .tag-pending { background: #fff7ed; color: #ea580c; border: 1px solid #fdba74; position: relative; }
+        .tag-clickable { cursor: pointer; transition: all 0.2s; }
+        .tag-clickable:hover { background: #ea580c; color: white; transform: translateY(-1px); }
+
+        /* Tooltip 样式 */
+        .tooltip-trigger { display: inline-block; cursor: help; color: var(--primary-color); margin-left: 4px; font-weight: bold; font-style: normal; }
+        .tooltip-box {
+            display: none; position: absolute; z-index: 99999; width: 340px;
+            background: rgba(30, 41, 59, 0.98); color: #fff; padding: 18px;
+            border-radius: 12px; font-size: 13px; line-height: 1.6;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4); top: 45px; pointer-events: none; font-weight: normal; text-align: left;
+        }
+        .tooltip-box.pos-right { left: auto; right: 0; }
+        .tooltip-box b { color: #fbbf24; display: block; font-size: 15px; margin-bottom: 8px; border-bottom: 1px solid #475569; padding-bottom: 4px; }
+        .tooltip-trigger:hover + .tooltip-box { display: block; }
+
+        /* --- 弹窗与 Toast 样式 --- */
+        .modal-overlay {
+            display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.4); z-index: 100000; align-items: center; justify-content: center;
+        }
+        .modal-box {
+            background: white; width: 400px; padding: 25px; border-radius: 12px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2); text-align: center;
+            animation: modalFadeIn 0.2s ease-out;
+        }
+        @keyframes modalFadeIn {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .modal-btns { display: flex; gap: 12px; justify-content: center; margin-top: 20px; }
+        .btn-cancel { background: #e2e8f0; color: #475569; }
+
+        /* 页面中央 Toast 样式 */
+        #toast-container {
+            position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+            z-index: 100001; pointer-events: none;
+        }
+        .toast {
+            background: rgba(15, 23, 42, 0.9); color: white; padding: 12px 24px;
+            border-radius: 8px; font-size: 14px; font-weight: 500; margin-bottom: 10px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+            opacity: 0; transform: translateY(10px); transition: 0.3s;
+        }
+        .toast.show { opacity: 1; transform: translateY(0); }
+        .toast-success { border-left: 4px solid var(--success-green); }
+        .toast-error { border-left: 4px solid var(--danger-red); }
+
+        .overdue-date { color: var(--danger-red) !important; font-weight: 700; }
+        .task-name-main { font-weight: 700; color: #0f172a; }
+        .rate-text { font-family: "Monaco", monospace; font-weight: 600; }
+        .date-text { font-family: "Monaco", monospace; font-size: 13px; color: var(--text-sub); }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>精简版-项目管理平台</h2>
+    
+    <div class="login-box">
+        <div class="form-group">
+            <label>账号</label>
+            <input type="text" id="account" placeholder="账号">
+        </div>
+        <div class="form-group">
+            <label>密码</label>
+            <input type="password" id="password" placeholder="密码">
+        </div>
+        <label style="display: flex; align-items: center; gap: 5px; font-size: 14px; color: var(--text-sub); cursor: pointer;">
+            <input type="checkbox" id="auto-login"> 自动登录
+        </label>
+        <button onclick="handleFlow()">同步数据</button>
+    </div>
+
+    <div id="status-msg"></div>
+
+    <div class="table-wrapper">
+        <table id="task-table" style="display:none;">
+            <thead>
+                <tr>
+                    <th style="width: 20%;"><span class="th-label">任务名称</span></th>
+                    <th style="width: 10%;"><span class="th-label">指派人</span><select id="filter-assigner" class="header-filter" onchange="runFilters()"></select></th>
+                    <th style="width: 10%;"><span class="th-label">执行人</span><select id="filter-executor" class="header-filter" onchange="runFilters()"></select></th>
+                    <th style="width: 13%;"><span class="th-label">开始日期</span><input type="date" id="filter-start-date" class="header-filter" onchange="runFilters()"></th>
+                    <th style="width: 13%;"><span class="th-label">截止日期</span><input type="date" id="filter-end-date" class="header-filter" onchange="runFilters()"></th>
+                    <th style="width: 10%;"><span class="th-label">状态</span><select id="filter-status" class="header-filter" onchange="runFilters()"></select></th>
+                    <th style="width: 12%;">
+                        <span class="th-label">进度执行率 <i class="tooltip-trigger">ⓘ</i>
+                            <div class="tooltip-box pos-right">
+                                <b>🚀 进度执行率：看干活快慢</b>
+                                <p>100% 为准时，大于 100% 为提前。</p>
+                            </div>
+                        </span>
+                    </th>
+                    <th style="width: 12%;">
+                        <span class="th-label">人力利用率 <i class="tooltip-trigger">ⓘ</i>
+                            <div class="tooltip-box pos-right">
+                                <b>👥 人力利用率：看成本省没省</b>
+                                <p>实际工时占预算的比例。小于 100% 说明在预算内。</p>
+                            </div>
+                        </span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="task-body"></tbody>
+        </table>
+    </div>
+</div>
+
+<!-- 吐司容器 -->
+<div id="toast-container"></div>
+
+<!-- 自定义确认弹窗 -->
+<div id="confirm-modal" class="modal-overlay">
+    <div class="modal-box">
+        <div style="font-size: 18px; font-weight: 700; margin-bottom: 15px;">确认操作</div>
+        <div id="confirm-msg" style="font-size: 14px; color: #475569; line-height: 1.6; margin-bottom: 25px;"></div>
+        <div class="modal-btns">
+            <button class="btn-cancel" onclick="closeModal()">取消</button>
+            <button id="modal-confirm-btn">确定</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    const API_BASE = 'http://192.168.10.40/api';
+    let RAW_DATA = []; 
+
+    // --- Toast 提示函数 ---
+    function showToast(message, type = 'success') {
+        const container = document.getElementById('toast-container');
+        const toast = document.createElement('div');
+        toast.className = `toast toast-${type}`;
+        toast.innerText = message;
+        container.appendChild(toast);
+
+        // 触发动画
+        setTimeout(() => toast.classList.add('show'), 10);
+
+        // 3秒后消失并移除
+        setTimeout(() => {
+            toast.classList.remove('show');
+            setTimeout(() => toast.remove(), 300);
+        }, 3000);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const savedAccount = localStorage.getItem('task_system_account');
+        const savedPassword = localStorage.getItem('task_system_password');
+        if (savedAccount) document.getElementById('account').value = savedAccount;
+        if (savedPassword) document.getElementById('password').value = savedPassword;
+        if (localStorage.getItem('task_system_auto_login') === 'true') {
+            document.getElementById('auto-login').checked = true;
+            setTimeout(() => handleFlow(true), 500);
+        }
+    });
+
+    async function handleFlow(isAuto = false) {
+        const account = document.getElementById('account').value;
+        const password = document.getElementById('password').value;
+        const autoLogin = document.getElementById('auto-login').checked;
+        const statusMsg = document.getElementById('status-msg');
+        
+        if(!account || !password) return;
+        statusMsg.style.display = 'block';
+        statusMsg.className = 'success';
+        statusMsg.innerText = '正在同步数据...';
+
+        try {
+            const loginRes = await fetch(`${API_BASE}/login`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ account, password })
+            });
+            const loginData = await loginRes.json();
+            if (loginData.code !== 200) throw new Error(loginData.message || '登录失败');
+
+            const token = loginData.token || loginData.access_token || loginData.data?.token;
+            localStorage.setItem('task_system_token', token);
+            localStorage.setItem('task_system_account', account);
+            localStorage.setItem('task_system_password', password);
+            localStorage.setItem('task_system_auto_login', autoLogin);
+
+            const taskRes = await fetch(`${API_BASE}/task-assignments/_search`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
+                body: JSON.stringify({ "filter": { "status": null, "task_type": 0 }, "page": 1, "per_page": 100000 })
+            });
+            const result = await taskRes.json();
+            RAW_DATA = (result.data?.list || []).sort((a, b) => b.id - a.id);
+
+            setupFilters();
+            renderTable(RAW_DATA);
+            statusMsg.innerText = `同步成功，共计 ${RAW_DATA.length} 条记录`;
+            document.getElementById('task-table').style.display = 'table';
+            if (!isAuto) showToast('数据同步成功');
+        } catch (err) {
+            statusMsg.className = 'error';
+            statusMsg.innerText = '错误: ' + err.message;
+            showToast(err.message, 'error');
+        }
+    }
+
+    function closeModal() { document.getElementById('confirm-modal').style.display = 'none'; }
+
+    function showCustomConfirm(message, onConfirm) {
+        const modal = document.getElementById('confirm-modal');
+        document.getElementById('confirm-msg').innerText = message;
+        modal.style.display = 'flex';
+        document.getElementById('modal-confirm-btn').onclick = () => { onConfirm(); closeModal(); };
+    }
+
+    async function acceptTask(id, taskName) {
+        showCustomConfirm(`确定要接受任务【${taskName}】吗？`, async () => {
+            const token = localStorage.getItem('task_system_token');
+            try {
+                const res = await fetch(`${API_BASE}/task-assignments/${id}`, {
+                    method: 'GET',
+                    headers: { 'Authorization': `Bearer ${token}` }
+                });
+                const result = await res.json();
+                if (result.code === 200) {
+                    showToast('接受成功！');
+                    handleFlow(true); 
+                } else {
+                    showToast('接受失败: ' + result.message, 'error');
+                }
+            } catch (err) { showToast('请求异常', 'error'); }
+        });
+    }
+
+    function setupFilters() {
+        const assigners = [...new Set(RAW_DATA.map(i => i.assigned_by_user?.name).filter(n => n))].sort();
+        const executors = [...new Set(RAW_DATA.map(i => i.assigned_to_user?.name).filter(n => n))].sort();
+        const statuses = [...new Set(RAW_DATA.map(i => i.status_desc).filter(s => s))].sort();
+        fillSelect('filter-assigner', assigners);
+        fillSelect('filter-executor', executors);
+        fillSelect('filter-status', statuses);
+    }
+
+    function fillSelect(id, list) {
+        const select = document.getElementById(id);
+        const current = select.value;
+        select.innerHTML = '<option value="all">全部</option>';
+        list.forEach(val => {
+            const opt = document.createElement('option');
+            opt.value = val; opt.innerText = val;
+            if(val === current) opt.selected = true;
+            select.appendChild(opt);
+        });
+    }
+
+    function runFilters() {
+        const valA = document.getElementById('filter-assigner').value;
+        const valE = document.getElementById('filter-executor').value;
+        const valS = document.getElementById('filter-status').value;
+        const valD1 = document.getElementById('filter-start-date').value;
+        const valD2 = document.getElementById('filter-end-date').value;
+
+        const filtered = RAW_DATA.filter(item => {
+            return (valA === 'all' || item.assigned_by_user?.name === valA) &&
+                   (valE === 'all' || item.assigned_to_user?.name === valE) &&
+                   (valS === 'all' || item.status_desc === valS) &&
+                   (!valD1 || item.start_time >= valD1) &&
+                   (!valD2 || item.end_time <= valD2);
+        });
+        renderTable(filtered);
+    }
+
+    function renderTable(data) {
+        const body = document.getElementById('task-body');
+        body.innerHTML = '';
+        const today = new Date().toISOString().split('T')[0];
+
+        data.forEach(item => {
+            const row = document.createElement('tr');
+            const statusDesc = item.status_desc || '-';
+            let statusClass = 'tag-ongoing';
+            let statusAttr = '';
+            
+            if (statusDesc === '已完成') statusClass = 'tag-completed';
+            if (statusDesc === '待接受') {
+                statusClass = 'tag-pending tag-clickable';
+                const safeName = (item.task?.task_name || '任务').replace(/'/g, "\\'");
+                statusAttr = `onclick="acceptTask(${item.id}, '${safeName}')"`;
+            }
+
+            const isOverdue = (statusDesc === '已接受' && item.end_time && item.end_time < today);
+            row.innerHTML = `
+                <td><div class="task-name-main">${item.task?.task_name || '-'}</div></td>
+                <td>${item.assigned_by_user?.name || '-'}</td>
+                <td>${item.assigned_to_user?.name || '-'}</td>
+                <td class="date-text">${item.start_time || '-'}</td>
+                <td class="date-text ${isOverdue ? 'overdue-date' : ''}">${item.end_time || '-'}</td>
+                <td><span class="tag ${statusClass}" ${statusAttr}>${statusDesc}</span></td>
+                <td class="rate-text">${item.progress_execution_rate || '0%'}</td>
+                <td class="rate-text">${item.manpower_utilization_rate || '0%'}</td>
+            `;
+            body.appendChild(row);
+        });
+    }
+</script>
+
+</body>
+</html>
