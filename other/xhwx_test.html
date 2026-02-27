@@ -1,0 +1,361 @@
+<script src="/rfprojectec/UI/layui/layui.js?version=2.1.0"></script>
+<script src="/rfprojectec/UI/layui/layui.all.js?version=2.1.0"></script>
+<link rel="stylesheet" href="/rfprojectec/UI/notiflix/notiflix-2.4.0.min.css">
+<script src="/rfprojectec/UI/notiflix/notiflix-2.4.0.min.js"></script>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <title>收集架与区域绑定</title>
+    <!-- 原始CSS链接保留 -->
+    <link rel="stylesheet" href="/rfprojectec/UI/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/rfprojectec/UI/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/rfprojectec/UI/assets/css/ace.min.css">
+    
+    <script src="/rfprojectec/UI/login/jquery-2.0.3.min.js"></script>
+    <script src="/rfprojectec/UI/bootstrap.min.js"></script>
+    <script src="/rfprojectec/UI/js/commonjs.js"></script>
+    <script src="/rfprojectec/UI/js/inventory_2.js?version=2.1.0"></script>
+    <script src="/rfprojectec/UI/toastr/toastr.min.js"></script>
+
+    <style>
+        /* --- 【核心修复】强制表格样式 --- */
+        /* 给表格加外边框和折叠边框 */
+        #typeid {
+            width: 100%;
+            border-collapse: collapse !important; /* 强制合并边框 */
+            border: 1px solid #ddd !important;   /* 强制灰色外边框 */
+            margin-bottom: 20px;
+        }
+        
+        /* 给每一行单元格加边框 */
+        #typeid td {
+            border: 1px solid #ddd !important;
+            padding: 10px 8px !important; /* 增加内边距让表格高一点 */
+            vertical-align: middle !important;
+            font-size: 14px;
+        }
+
+        /* 模拟 table-striped 隔行变色效果 */
+        #typeid tbody tr:nth-child(odd) {
+            background-color: #f9f9f9 !important; 
+        }
+
+        /* 鼠标悬停变色 */
+        #typeid tbody tr:hover {
+            background-color: #f5f5f5 !important;
+        }
+
+        /* 表头样式 */
+        #typeid thead tr {
+            background-color: #eff3f8 !important; /* 浅蓝色背景，模拟Ace Admin风格 */
+            background-image: linear-gradient(to bottom, #f8fcfd 0%, #eff3f8 100%);
+            font-weight: bold;
+            color: #336199;
+        }
+
+        /* 选中行的样式 */
+        input[type="radio"]:checked + td {
+            background-color: #ffcccc;
+        }
+    </style>
+</head>
+<body style="background: none;" id="data">
+<div class="container">
+    <div class="page-header" style="padding-top: 10px;padding-bottom: 40px;">
+        <div style="float:left; font-size: 24px;" id="home_div">
+            <a href="javascript:;" onClick="javascript:history.back(-1);"><i class="icon-reply" style="font-size: 32px;"></i></a>
+            <span style="padding-left: 16px; font-weight: bold">区域绑定7015</span>
+        </div>
+        <div style="float: right; font-size: 20px; margin-right: 4px;">
+            <a href="/rfprojectec/user/logout"><i class="icon-off" style="font-size: 28px;"></i></a>
+        </div>
+    </div>
+    
+    <div id="title" name="title">
+        <div id="typetitle" class="form-group" align="center" style="font-size:12px;color: #aab0a6">
+            区域类型 AREATYPES</div>
+        <div id="areastitle" class="form-group" align="center" style="font-size:12px;color: #aab0a6" hidden>
+            区域选择 AREAS</div>
+    </div>
+    
+    <form class="form-horizontal" id="shelfoffForm" Activex>
+
+        <!-- 输入框区域：默认隐藏 -->
+        <div class="form-group" id="collectidgroup" style="margin-top: 10px" hidden>
+            <label class="col-xs-3 col-sm-3 control-label1 no-padding-right">收集架</label>
+            <div class="col-xs-9 col-sm-9">
+                <span class="block input-icon input-icon-right">
+                    <input type="text" name="collectid" id="collectid" class="width-100" onkeyup="toUpperCase(this)" label="收集架" />
+                </span>
+            </div>
+        </div>
+
+        <div class="form-group" id="putawayareagroup" style="margin-top: 10px" hidden>
+            <label class="col-xs-3 col-sm-3 control-label1 no-padding-right">上架区</label>
+            <div class="col-xs-9 col-sm-9">
+                <span class="block input-icon input-icon-right">
+                    <input type="text" name="putawayarea" id="putawayarea" class="width-100" onkeyup="toUpperCase(this)" label="上架区"/>
+                </span>
+            </div>
+        </div>
+        
+        <!-- 表格区域 -->
+        <table id="typeid" class="table table-striped table-bordered table-hover">
+            <thead>
+            <tr id="idtest">
+                <td style="width: 50px; text-align: center;">radio</td>
+                <td>type</td>
+                <td>value</td>
+            </tr>
+            </thead>
+            <!-- 硬编码数据 -->
+            <tbody id="tbody">
+                <tr id="tr_1">
+                    <td align="center"><input name="radio" type="radio" id="radio_1" checked /></td>
+                    <td>1集货区</td>
+                    <td>CENTER</td>
+                </tr>
+                <tr id="tr_2">
+                    <td align="center"><input name="radio" type="radio" id="radio_2" /></td>
+                    <td>2馆配区</td>
+                    <td>DEF</td>
+                </tr>
+                <tr id="tr_3">
+                    <td align="center"><input name="radio" type="radio" id="radio_3" /></td>
+                    <td>3待退</td>
+                    <td>DT</td>
+                </tr>
+                <tr id="tr_4">
+                    <td align="center"><input name="radio" type="radio" id="radio_4" /></td>
+                    <td>4风黄污损</td>
+                    <td>FH</td>
+                </tr>
+                <tr id="tr_5">
+                    <td align="center"><input name="radio" type="radio" id="radio_5" /></td>
+                    <td>5零拣区</td>
+                    <td>PICK</td>
+                </tr>
+                <tr id="tr_6">
+                    <td align="center"><input name="radio" type="radio" id="radio_6" /></td>
+                    <td>6备货区</td>
+                    <td>STOCK</td>
+                </tr>
+                <tr id="tr_7">
+                    <td align="center"><input name="radio" type="radio" id="radio_7" /></td>
+                    <td>7预包装</td>
+                    <td>YB</td>
+                </tr>
+                <tr id="tr_8">
+                    <td align="center"><input name="radio" type="radio" id="radio_8" /></td>
+                    <td>8印装质量</td>
+                    <td>YZ</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- 区域选择结果表 -->
+        <table id="areasid" class="table table-striped table-bordered table-hover" hidden>
+            <thead>
+            <tr id="idtest1">
+                <td id="radio1">radio</td>
+                <td>value</td>
+            </tr>
+            </thead>
+            <tbody id="tbody1">
+            </tbody>
+        </table>
+
+        <div id="F2"  align="center" style="font-size:20px;color: #AA0000" hidden>F2--查找值</div>
+
+    </form>
+</div>
+<script>
+    
+    // 页面加载完成后，只做一件事：让第一个单选框获得焦点
+    $(function(){
+         $("#radio_1").focus();
+    });
+
+    document.onkeydown = function (event) {
+        var e = event || window.event || arguments.callee.caller.arguments[0];
+        
+        // --- 核心逻辑：上下键支持 ---
+        if(e && (e.keyCode == 38 || e.keyCode == 40)){
+            // 原生支持
+        }
+
+        if (e && e.keyCode == 27) { // ESC
+            if( $('#typetitle').is(":visible")){
+                $('#typetitle').attr("hidden", "hidden");
+                $('#F2').removeAttr("hidden");
+                $('#putawayareagroup').removeAttr("hidden");
+                $('#collectidgroup').removeAttr("hidden");
+                $('#typeid').attr("hidden", "hidden");
+                $("#putawayarea").val("");
+                $("#putawayarea").focus();
+                return ;
+            }else if ($('#areastitle').css("display")=="block"){
+                // 从区域详情返回到区域类型
+                $('#F2').attr("hidden", "hidden");
+                $('#areastitle').attr("hidden", "hidden");
+                $('#areasid').attr("hidden", "hidden");
+                
+                // 显示回区域类型
+                $('#typetitle').removeAttr("hidden");
+                $('#typeid').removeAttr("hidden");
+                
+                // 重置选中状态到第一行
+                $("input[name='radio']").prop("checked", false);
+                $("#radio_1").prop("checked", true);
+                $("#radio_1").focus();
+                return ;
+            }else {
+                window.location.href = "../collect/main?layerrfmenuId=RF01";
+            }
+            return false;
+        }
+
+        if (e && e.keyCode == 13) { // Enter
+            var url = "../rf/rfjson";
+            if (document.activeElement.id == "collectid") {
+                if($("#collectid").val()==""){
+                    toastr.error("请输入收集架!");
+                    return false;
+                }
+                var COLLECTID = $("#collectid").val().trim();
+                var paras = {serviceId: "NSPRFCOLLECTBANDINXMT", recordType: "1",COLLECTID:COLLECTID};
+                callService(url, paras, procResult);
+                return ;
+            }else if (document.activeElement.id == "putawayarea"){
+                var COLLECTID = $("#collectid").val().trim();
+                 if($("#putawayarea").val()==""){
+                     toastr.error("请输入上架区!");
+                     return false;
+                 }
+                var PUTAWAYAREA = $("#putawayarea").val().trim();
+                var paras = {serviceId: "NSPRFCOLLECTENTER", recordType: "1",COLLECTID:COLLECTID,PUTAWAYAREA:PUTAWAYAREA};
+                callService(url, paras, procResult);
+                return;
+            }
+
+            // --- 核心逻辑：在表格界面按回车 ---
+            if(!$('#typeid').is(":hidden")) {
+                var checkedRadio = $('input[name="radio"]:checked');
+                if(checkedRadio.length === 0){
+                    $("#radio_1").prop("checked", true);
+                    checkedRadio = $("#radio_1");
+                }
+                var codeText = checkedRadio.parents("tr").find("td").eq(1).text(); 
+                if (!codeText) return; 
+                var code = $.trim(codeText).substring(0,1);
+                
+                $('#typeid').attr("hidden", "hidden");
+                
+                var NUM = code;
+                var paras = {serviceId: "NSPRFAREA", recordType: "1",Value1:"CENTER",Value2:"DEF",
+                    Value3:"DT",Value4:"FH",Value5:"PICK",Value6:"STOCK",Value7:"YB",Value8:"YZ",Value9:"",Value10:"",NUM:NUM};
+                callService(url, paras, procResult);
+                return ;
+            } 
+            else if ($('#areasid').css("display")=="table"){
+                $('#typeid').attr("hidden", "hidden");
+                $('#areasid').attr("hidden", "hidden");
+                var code = $('input[name="radio"]:checked').parents("tr").find("td").eq(1).html();
+                $('#areastitle').attr("hidden", "hidden");
+                $('#putawayareagroup').removeAttr("hidden");
+                $('#collectidgroup').removeAttr("hidden");
+                $("#putawayarea").val(code);
+                $("#putawayarea").select().focus();
+                $('#F2').removeAttr("hidden");
+                $("#areasid tbody").html("");
+            }
+        }
+    }
+
+    toastr.options = {
+        positionClass: "toast-top-center",
+        timeOut: "1000"
+    }
+    
+    function procResult(result) {
+        if (!result) return;
+
+        if (result.success == false) {
+            if((result.message).indexOf("收集架不")!=-1){
+                $("#collectid").val("");
+                $("#collectid").focus();
+                $('#F2').attr("hidden", "hidden");
+            }else if (result.message.indexOf("上架区域不存在")!=-1){
+                $('#putawayarea').val("");
+                $('#putawayarea').focus();
+            }
+            toastr.error(result.message);
+            return;
+        }
+
+        if (result.responseJspPage == "NSPRFCOLLECTBANDINXMT") {
+            if (result.returnCode == 4 && result.rowCount >= 1) {
+                $('#putawayarea').focus();
+                $('#F2').removeAttr("hidden");
+            } else {
+                $("#collectid").val("");
+                $("#collectid").focus();
+                $('#F2').attr("hidden", "hidden");
+            }
+        } else if (result.responseJspPage == "NSPRFCOLLECTENTER") {
+            if(result.returnCode==1){
+                toastr.error(result.message);
+                $('#F2').attr("hidden", "hidden");
+                $("#collectid").val("");
+                $("#putawayarea").val("");
+                $("#collectid").focus();
+                return ;
+            }
+        } else if (result.responseJspPage == "NSPRFAREATYPE") {
+            $('#collectidgroup').attr("hidden", "hidden");
+            $('#putawayareagroup').attr("hidden", "hidden");
+            $('#title').show();
+            $('#typetitle').removeAttr("hidden");
+            $('#typeid').removeAttr("hidden");
+            $('#F2').attr("hidden", "hidden");
+            $("#radio_1").focus();
+            return;
+        } else if (result.responseJspPage=="NSPRFAREA"){
+             if(result.returnCode == 1 ){
+                 $('#areasid').removeAttr("hidden");
+                 $('#F2').attr("hidden", "hidden");
+                 $('#typetitle').attr("hidden", "hidden");
+                 $('#areastitle').removeAttr("hidden");
+                 $('#areasid').removeAttr("hidden");
+                 $("#areasid tbody").html("");
+                 var data = result.result;
+                 var des=new Array();
+                 $.each(data,function(i,entity){
+                     var k=i*8;
+                     for(var j=0;j<8;j++){
+                         if(entity["Value"+j+"1"]!=undefined || entity["Value"+j+"1"]!=""){
+                             des[k+j]=entity["Value"+j+"1"];
+                         }
+                     }
+                 });
+                 $.each(des, function (m, enti) {
+                     if(enti!=null && enti!=undefined) {
+                         $("#tbody1").append('<tr   key="' + des[m] + '" id=' + m + '>' +
+                             '<td id=' + m + '><input name="radio" type="radio" id="radio' + m + '" /></td>\n' +
+                             '<td>' + enti + '</td>\n' +
+                             '</tr>\n');
+                     }
+                 });
+                 $("#tbody1 tr:eq(0)").find("input").attr("checked", "checked");
+                 $("#tbody1 tr:eq(0)").find("input").focus();
+                 return ;
+             }
+        }
+    }
+
+</script>
+</body>
+</html>
